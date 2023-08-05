@@ -8,6 +8,11 @@
 }
 
 @font-face {
+  font-family: ceraBold;
+  src: url(./assets/font/Cera-GR-Bold.ttf);
+}
+
+@font-face {
   font-family: chesna;
   src: url(./assets/font/ChesnaGrotesk-Semibold.otf);
 }
@@ -24,7 +29,7 @@
 
 body {
   margin: 0;
-  font-family: chesna;
+  font-family: cera;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -39,5 +44,5 @@ code {
 }
 
 .title {
-  font-family: chesnaBold;
+  font-family: ceraBold;
 }
