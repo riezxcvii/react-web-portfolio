@@ -1,15 +1,9 @@
-import Navbar from "./components/Navbar";
-import Cover from "./components/Cover";
+import Contact from "./components/Contact";
 
 function App() {
   return (
     <div className="App">
-      <div className="sticky top-0">
-        <Navbar />
-      </div>
-      <div>
-        <Cover />
-      </div>
+      <Contact />
     </div>
   );
 }
