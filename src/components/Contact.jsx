@@ -10,11 +10,10 @@ const Main = () => {
       <img
         src={Image}
         alt="Rieza Marie Banquillo"
-        className="mx-40 brightness-125 md:w-[36.2rem] md:absolute md:inset-y-0 md:right-0"
+        className="mx-40 brightness-110 md:w-[36.2rem] md:absolute md:inset-y-0 md:right-0"
       />
 
       <div className="my-auto mx-20">
-        <h1 className="title uppercase text-xl text-rust">Web Developer</h1>
         <div className="space-y-[-2.2rem]">
           <h2 className="name uppercase text-[4.65rem]">Rieza Marie</h2>
           <h1 className="name uppercase text-[5rem]">Banquillo</h1>
@@ -31,6 +30,7 @@ const Main = () => {
           <a
             href="https://drive.google.com/file/d/1hebmoFubstqMKKk8lrc50MGPwormIxCq/view?usp=sharing"
             target="_blank"
+            rel="noreferrer"
             className="rounded-lg py-2 px-4 bg-beige hover:bg-darkBeige flex"
           >
             <svg
@@ -73,9 +73,13 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="p-8 grid-cols-1 grid-rows-3 md:absolute md:right-0 md:bottom-0 space-y-2">
+      <div className="p-8 grid-cols-1 grid-rows-3 md:absolute md:right-0 md:bottom-0 space-y-4">
         <div>
-          <a href="https://www.facebook.com/octa.xixmm" target="_blank">
+          <a
+            href="https://www.facebook.com/octa.xixmm"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={Facebook} alt="Facebook" className="w-7" />
           </a>
         </div>
@@ -83,12 +87,17 @@ const Main = () => {
           <a
             href="https://www.linkedin.com/in/riezamarie-banquillo/"
             target="_blank"
+            rel="noreferrer"
           >
             <img src={Linkedin} alt="Linkedin" className="w-7" />
           </a>
         </div>
         <div>
-          <a href="https://github.com/rieza-ix" target="_blank">
+          <a
+            href="https://github.com/rieza-ix"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={GitHub} alt="GitHub" className="w-7" />
           </a>
         </div>
