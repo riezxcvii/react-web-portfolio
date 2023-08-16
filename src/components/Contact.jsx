@@ -6,27 +6,28 @@ import GitHub from "../assets/svg/github.svg";
 
 const Main = () => {
   return (
-    <div className="md:min-w-screen md:min-h-screen md:flex">
+    <div className="md:min-w-screen md:min-h-screen min-h-screen md:flex px-4">
       <img
         src={Image}
         alt="Rieza Marie Banquillo"
-        className="mx-40 brightness-110 md:w-[36.2rem] md:absolute md:inset-y-0 md:right-0"
+        className="md:mx-40 brightness-110 md:w-[36.2rem] md:absolute md:inset-y-0 md:right-0 md:mb-0 mb-1"
       />
 
-      <div className="my-auto mx-20">
-        <div className="space-y-[-2.2rem]">
-          <h2 className="name uppercase text-[4.65rem]">Rieza Marie</h2>
-          <h1 className="name uppercase text-[5rem]">Banquillo</h1>
+      <div className="md:my-auto md:mx-20">
+        <div className="flex flex-col items-center space-y-[-1.2rem] justify-center">
+          <h2 className="name uppercase md:text-[4.65rem] text-[3rem]">
+            Rieza Marie
+          </h2>
+          <h1 className="name uppercase md:text-[5rem] text-[3.2rem]">
+            Banquillo
+          </h1>
         </div>
-        <p className="mb-6">
-          A passionate web developer willing to be trained
-          <br />
-          who wants to be part of an organization where I
-          <br />
-          can continuously enhance my skills.
+        <p className="md:mx-0 mx-auto mb-6 px-1 md:text-left md:w-[24rem] text-center w-80">
+          A passionate web developer willing to be trained who wants to be part
+          of an organization where I can continuously enhance my skills.
         </p>
 
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 items-center justify-center md:justify-start">
           <a
             href="https://drive.google.com/file/d/1hebmoFubstqMKKk8lrc50MGPwormIxCq/view?usp=sharing"
             target="_blank"
@@ -73,14 +74,14 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="p-8 grid-cols-1 grid-rows-3 md:absolute md:right-0 md:bottom-0 space-y-4">
+      <div className="md:p-8 grid grid-cols-3 grid-rows-1 md:grid-cols-1 md:grid-rows-3 md:absolute md:right-0 md:bottom-0 md:space-y-4 md:m-0 m-8">
         <div>
           <a
             href="https://www.facebook.com/octa.xixmm"
             target="_blank"
             rel="noreferrer"
           >
-            <img src={Facebook} alt="Facebook" className="w-7" />
+            <img src={Facebook} alt="Facebook" className="w-7 mx-auto" />
           </a>
         </div>
         <div>
@@ -89,7 +90,11 @@ const Main = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={Linkedin} alt="Linkedin" className="w-7" />
+            <img
+              src={Linkedin}
+              alt="Linkedin"
+              className="w-7 md:mt-[-0.45rem] mx-auto"
+            />
           </a>
         </div>
         <div>
@@ -98,7 +103,7 @@ const Main = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={GitHub} alt="GitHub" className="w-7" />
+            <img src={GitHub} alt="GitHub" className="w-7 mx-auto" />
           </a>
         </div>
       </div>
