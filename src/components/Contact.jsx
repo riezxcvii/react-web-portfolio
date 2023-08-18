@@ -3,34 +3,82 @@ import Image from "../assets/img/rmjb.png";
 import Facebook from "../assets/svg/facebook.svg";
 import Linkedin from "../assets/svg/linkedin.svg";
 import GitHub from "../assets/svg/github.svg";
+import Gmail from "../assets/svg/gmail.svg";
 
 const Main = () => {
   return (
     <div className="md:min-w-screen md:min-h-screen min-h-screen md:flex px-4">
-      {/* picture */}
-      <img
-        src={Image}
-        alt="Rieza Marie Banquillo"
-        className="md:mx-40 brightness-110 md:w-[36.2rem] md:absolute md:inset-y-0 md:right-0 md:mb-0 mb-1"
-      />
-
       <div className="md:my-auto md:mx-20">
+        {/* picture */}
+        <img
+          src={Image}
+          alt="Rieza Marie Banquillo"
+          className="md:mx-40 brightness-110 md:w-[36.2rem] md:absolute md:inset-y-0 md:right-0 md:mb-0 mb-1"
+        />
+
         {/* name */}
-        <div className="flex flex-col items-center space-y-[-2rem] justify-center mb-3">
-          <h2 className="name uppercase md:text-[4.2rem] text-[3rem]">
+        <div className="flex flex-col md:space-y-[-2rem] md:mb-3 mb-2 space-y-[-1.3rem]">
+          <h2 className="name uppercase md:text-[4.2rem] text-[2.7rem] md:ml-0 md:mt-0 mt-1 text-center">
             Rieza Marie
           </h2>
-          <h1 className="name uppercase md:text-[4.5rem] text-[3.2rem]">
+          <h1 className="name uppercase md:text-[4.5rem] text-[2.9rem] md:ml-0 md:mt-0 mt-1 text-center">
             Banquillo
           </h1>
         </div>
 
         {/* bio */}
-        <p className="md:mx-0 mx-auto mb-7 px-1 md:text-left md:w-[24rem] w-80">
-          A passionate developer willing to be trained who wants to be part
-          of an organization where I can add value and continuously enhance my
+        <p className="md:mx-0 mx-auto mb-7 md:px-1 px-2 md:text-left text-center md:w-[24rem] w-80">
+          A passionate developer willing to be trained who wants to be part of
+          an organization where I can add value and continuously enhance my
           skills.
         </p>
+
+        {/* profile links */}
+        <div className="md:p-8 grid grid-cols-4 grid-rows-1 md:grid-cols-1 md:grid-rows-3 md:absolute md:right-0 md:bottom-0 md:m-0 m-8 md:mt-0 mt-[-0.3rem] items-center justify-center">
+          <div className="flex items-center align-center h-full md:mb-6 mx-auto">
+            <a
+              href="https://www.facebook.com/octa.xixmm"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Facebook} alt="Facebook" className="w-7 mx-auto" />
+            </a>
+          </div>
+
+          <div className="flex items-center align-center h-full md:mb-6 mx-auto">
+            <a
+              href="https://github.com/rieza-ix"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={GitHub} alt="GitHub" className="w-[1.9rem] mx-auto" />
+            </a>
+          </div>
+
+          <div className="flex items-center align-center h-full md:mb-6 mx-auto">
+            <a
+              href="https://www.linkedin.com/in/riezamarie-banquillo/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={Linkedin}
+                alt="Linkedin"
+                className="w-[1.8rem] mx-auto"
+              />
+            </a>
+          </div>
+
+          <div className="flex items-center align-center h-full md:mb-6 mx-auto">
+            <a
+              href="mailto:rizmarezlo@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Gmail} alt="Gmail" className="w-[1.7rem] mx-auto" />
+            </a>
+          </div>
+        </div>
 
         {/* buttons */}
         <div className="flex space-x-4 items-center justify-center md:justify-start">
@@ -56,59 +104,6 @@ const Main = () => {
               ></path>
             </svg>
             Download CV
-          </a>
-          <a
-            href="mailto:rizmarezlo@gmail.com"
-            className="rounded-lg py-2 px-4 bg-beige hover:bg-darkBeige flex"
-          >
-            <svg
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              className="w-5 my-auto mr-1"
-            >
-              <path
-                strokeLinecap="round"
-                d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
-              ></path>
-            </svg>
-            Send E-Mail
-          </a>
-        </div>
-      </div>
-
-      {/* profile links */}
-      <div className="md:p-8 grid grid-cols-3 grid-rows-1 md:grid-cols-1 md:grid-rows-3 md:absolute md:right-0 md:bottom-0 md:m-0 m-8">
-        <div className="flex items-center align-center h-full md:mb-6">
-          <a
-            href="https://www.facebook.com/octa.xixmm"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={Facebook} alt="Facebook" className="w-7 mx-auto" />
-          </a>
-        </div>
-
-        <div className="flex items-center align-center h-full md:mb-6">
-          <a
-            href="https://www.linkedin.com/in/riezamarie-banquillo/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={Linkedin} alt="Linkedin" className="w-[1.8rem] mx-auto" />
-          </a>
-        </div>
-
-        <div className="flex items-center align-center h-full md:mb-6">
-          <a
-            href="https://github.com/rieza-ix"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={GitHub} alt="GitHub" className="w-[1.9rem] mx-auto" />
           </a>
         </div>
       </div>
