@@ -7,6 +7,7 @@ import GitHub from "../assets/svg/github.svg";
 const Main = () => {
   return (
     <div className="md:min-w-screen md:min-h-screen min-h-screen md:flex px-4">
+      {/* picture */}
       <img
         src={Image}
         alt="Rieza Marie Banquillo"
@@ -14,19 +15,24 @@ const Main = () => {
       />
 
       <div className="md:my-auto md:mx-20">
-        <div className="flex flex-col items-center space-y-[-1.2rem] justify-center">
-          <h2 className="name uppercase md:text-[4.65rem] text-[3rem]">
+        {/* name */}
+        <div className="flex flex-col items-center space-y-[-2rem] justify-center mb-3">
+          <h2 className="name uppercase md:text-[4.2rem] text-[3rem]">
             Rieza Marie
           </h2>
-          <h1 className="name uppercase md:text-[5rem] text-[3.2rem]">
+          <h1 className="name uppercase md:text-[4.5rem] text-[3.2rem]">
             Banquillo
           </h1>
         </div>
-        <p className="md:mx-0 mx-auto mb-6 px-1 md:text-left md:w-[24rem] text-center w-80">
-          A passionate web developer willing to be trained who wants to be part
-          of an organization where I can continuously enhance my skills.
+
+        {/* bio */}
+        <p className="md:mx-0 mx-auto mb-7 px-1 md:text-left md:w-[24rem] w-80">
+          A passionate developer willing to be trained who wants to be part
+          of an organization where I can add value and continuously enhance my
+          skills.
         </p>
 
+        {/* buttons */}
         <div className="flex space-x-4 items-center justify-center md:justify-start">
           <a
             href="https://drive.google.com/file/d/1hebmoFubstqMKKk8lrc50MGPwormIxCq/view?usp=sharing"
@@ -74,8 +80,9 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="md:p-8 grid grid-cols-3 grid-rows-1 md:grid-cols-1 md:grid-rows-3 md:absolute md:right-0 md:bottom-0 md:space-y-4 md:m-0 m-8">
-        <div>
+      {/* profile links */}
+      <div className="md:p-8 grid grid-cols-3 grid-rows-1 md:grid-cols-1 md:grid-rows-3 md:absolute md:right-0 md:bottom-0 md:m-0 m-8">
+        <div className="flex items-center align-center h-full md:mb-6">
           <a
             href="https://www.facebook.com/octa.xixmm"
             target="_blank"
@@ -84,26 +91,24 @@ const Main = () => {
             <img src={Facebook} alt="Facebook" className="w-7 mx-auto" />
           </a>
         </div>
-        <div>
+
+        <div className="flex items-center align-center h-full md:mb-6">
           <a
             href="https://www.linkedin.com/in/riezamarie-banquillo/"
             target="_blank"
             rel="noreferrer"
           >
-            <img
-              src={Linkedin}
-              alt="Linkedin"
-              className="w-7 md:mt-[-0.45rem] mx-auto"
-            />
+            <img src={Linkedin} alt="Linkedin" className="w-[1.8rem] mx-auto" />
           </a>
         </div>
-        <div>
+
+        <div className="flex items-center align-center h-full md:mb-6">
           <a
             href="https://github.com/rieza-ix"
             target="_blank"
             rel="noreferrer"
           >
-            <img src={GitHub} alt="GitHub" className="w-7 mx-auto" />
+            <img src={GitHub} alt="GitHub" className="w-[1.9rem] mx-auto" />
           </a>
         </div>
       </div>

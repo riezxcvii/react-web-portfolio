@@ -3,33 +3,23 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: cera;
-  src: url(./assets/font/Cera-GR-Bold.ttf);
+  font-family: ceraMedium;
+  src: url(./assets/font/Cera-Pro-Medium.otf);
 }
 
 @font-face {
   font-family: ceraBold;
-  src: url(./assets/font/Cera-GR-Bold.ttf);
+  src: url(./assets/font/Cera-Pro-Bold.otf);
 }
 
 @font-face {
-  font-family: chesna;
-  src: url(./assets/font/ChesnaGrotesk-Semibold.otf);
-}
-
-@font-face {
-  font-family: chesnaBlack;
-  src: url(./assets/font/ChesnaGrotesk-Black.otf);
-}
-
-@font-face {
-  font-family: chesnaBold;
-  src: url(./assets/font/ChesnaGrotesk-Bold.otf);
+  font-family: ceraBlack;
+  src: url(./assets/font/Cera-ProBlack.otf);
 }
 
 body {
   margin: 0;
-  font-family: cera;
+  font-family: ceraMedium;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(#e5e0ff, #eadca6);
@@ -41,7 +31,7 @@ code {
 }
 
 .name {
-  font-family: chesnaBlack;
+  font-family: ceraBlack;
 }
 
 .title {
