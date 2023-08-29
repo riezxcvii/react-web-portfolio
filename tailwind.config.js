@@ -7,10 +7,12 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
+      dirtyWhite: "#e5e0ff",
       rust: "#C36A2D",
       lightBeige: "#EADCA6",
-      beige: "#E2C275",
-      darkBeige: "#deb960",
+      beige: "#BFB790",
+      darkBeige: "#BEAF84",
+      pastelBeige: "#C2B897",
     },
   },
   plugins: [require("flowbite/plugin")],

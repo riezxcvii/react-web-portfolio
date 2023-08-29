@@ -22,7 +22,7 @@ body {
   font-family: ceraMedium;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(#e5e0ff, #eadca6);
+  background-image: linear-gradient(#e5e0ff, #c2b897);
 }
 
 code {
