@@ -9,9 +9,9 @@ module.exports = {
     colors: {
       dirtyWhite: "#e5e0ff",
       rust: "#C36A2D",
-      lightBeige: "#EADCA6",
+      lightBeige: "#C8BF93",
       beige: "#BFB790",
-      darkBeige: "#BEAF84",
+      darkBeige: "#BAAB80",
       pastelBeige: "#C2B897",
     },
   },

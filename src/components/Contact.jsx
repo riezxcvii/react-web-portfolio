@@ -86,7 +86,7 @@ const Main = () => {
             href="https://drive.google.com/file/d/1hebmoFubstqMKKk8lrc50MGPwormIxCq/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
-            className="rounded-lg py-2 px-4 bg-beige hover:bg-darkBeige flex"
+            className="rounded-lg py-2 px-4 bg-beige hover:bg-lightBeige flex focus:ring-2 ring-darkBeige"
           >
             <svg
               fill="none"
