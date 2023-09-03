@@ -17,28 +17,28 @@ const Main = () => {
       link: "https://www.facebook.com/rmjbxixmm",
       logo: Facebook,
       alt: "Facebook",
-      style: "w-7 mx-auto",
+      style: "w-[1.9rem] p-[0.1rem] mx-[0.01rem] md:my-3",
       id: 1,
     },
     {
       link: "https://github.com/rieza-ix",
       logo: GitHub,
       alt: "GitHub",
-      style: "w-[1.9rem] mx-auto",
+      style: "w-[1.9rem] mx-auto md:my-3",
       id: 2,
     },
     {
       link: "https://www.linkedin.com/in/riezamarie-banquillo/",
       logo: Linkedin,
       alt: "LinkedIn",
-      style: "w-[1.8rem] mx-auto",
+      style: "md:w-[1.9rem] w-[1.85rem] md:py-0 py-[0.03rem] mx-auto md:my-3",
       id: 3,
     },
     {
       link: "mailto:rizmarezlo@gmail.com",
       logo: Gmail,
       alt: "G-Mail",
-      style: "w-[1.7rem] mx-auto",
+      style: "w-[1.9rem] p-[0.1rem] mx-[0.01rem] md:my-3",
       id: 4,
     },
   ]);
@@ -74,11 +74,11 @@ const Main = () => {
           </p>
 
           {/* profile links */}
-          <div className="md:p-8 grid grid-cols-4 grid-rows-1 md:grid-cols-1 md:grid-rows-4 md:absolute md:right-0 md:bottom-0 md:m-0 m-8 md:mt-0 mt-[-0.3rem] items-center justify-center bg-rust">
+          <div className="md:p-8 grid grid-cols-4 grid-rows-1 md:grid-cols-1 md:grid-rows-4 md:absolute md:right-0 md:bottom-0 md:m-0 m-8 md:mt-0 mt-[-0.3rem] items-center justify-center">
             {links.map((profile) => (
               <ul key={profile.id}>
                 <li>
-                  <div className="flex items-center align-center h-full md:mb-6 mx-auto">
+                  <div className="flex items-center justify-center mx-auto">
                     <a href={profile.link} target="_blank" rel="noreferrer">
                       <img
                         src={profile.logo}
