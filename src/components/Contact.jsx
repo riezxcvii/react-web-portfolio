@@ -14,7 +14,7 @@ const Main = () => {
   // set array value and call it in the profile section
   const [links] = useState([
     {
-      link: "https://www.facebook.com/rmjbxixmm",
+      link: "https://www.facebook.com/riezcvii",
       logo: Facebook,
       alt: "Facebook",
       style: "w-[1.9rem] p-[0.1rem] mx-[0.01rem] md:my-3",
