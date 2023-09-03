@@ -3,11 +3,11 @@ import HardSkills from "./HardSkills";
 
 const Skills = () => {
   return (
-    <div className="md:min-w-screen min-w-screen md:min-h-screen min-h-screen">
+    <div className="md:min-w-screen md:min-h-screen min-h-screen">
       <div className="flex">
         {/* technical skills */}
         <div className="bg-pastelBeige w-full">
-          <h1 className="name w-fit py-2 px-4 shadow-md bg-dirtyWhite rounded-lg md:text-3xl md:mx-auto ml-6 mt-20 mb-6 text-gray-900 text-center">
+          <h1 className="name w-fit py-2 px-4 shadow-md bg-dirtyWhite rounded-lg md:text-3xl mx-auto mt-10 mb-6 text-gray-900 text-center">
             HARD Skills
           </h1>
 
