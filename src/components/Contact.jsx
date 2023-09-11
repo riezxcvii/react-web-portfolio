@@ -53,7 +53,7 @@ const Main = () => {
           <img
             src={Image}
             alt="Rieza Marie Banquillo"
-            className="md:mx-40 brightness-110 md:w-[36.2rem] md:absolute md:inset-y-0 md:right-0 md:mb-0 mb-1"
+            className="md:mx-40 brightness-110 md:w-[36.2rem] w-[19.5rem] mx-auto md:absolute md:inset-y-0 md:right-0 md:mb-0 mb-1"
           />
 
           {/* name */}
