@@ -8,7 +8,7 @@ const Header = ({ header }) => {
           <h1 className="w-fit title md:text-2xl text-md uppercase whitespace-nowrap mr-2">
             {headerVal.title}
           </h1>
-          <hr className="w-full h-px bg-black border-0 md:my-5 my-auto" />
+          <hr className="w-full h-px bg-black border-0 md:my-[1.1rem] my-auto" />
         </div>
       ))}
     </div>
