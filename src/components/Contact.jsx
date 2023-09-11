@@ -9,7 +9,9 @@ import Header from "./Header";
 
 const Main = () => {
   // set value for Header state
-  const [header] = useState([{ title: "Developer's Profile", id: 1 }]);
+  const [header] = useState([
+    { title: "Developer's Profile", bg: "bg-black", id: 1 },
+  ]);
 
   // set array value and call it in the profile section
   const [links] = useState([
@@ -98,7 +100,7 @@ const Main = () => {
               href="https://drive.google.com/file/d/1hebmoFubstqMKKk8lrc50MGPwormIxCq/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
-              className="rounded-lg py-2 px-4 bg-peach hover:bg-lightPeach flex focus:ring-2 ring-darkPeach"
+              className="rounded-lg py-2 px-4 bg-lightPeach hover:bg-peach flex focus:ring-2 ring-darkPeach"
             >
               <svg
                 fill="none"

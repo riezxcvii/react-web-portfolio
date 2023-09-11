@@ -8,9 +8,9 @@ module.exports = {
     extend: {},
     colors: {
       dirtyWhite: "#e5e0ff",
-      lightPeach: "#DF7857",
-      peach: "#D68060",
-      darkPeach: "#BA6B57",
+      lightPeach: "#d09b8e",
+      peach: "#c98c7c",
+      darkPeach: "#c27d6b",
     },
   },
   plugins: [require("flowbite/plugin")],

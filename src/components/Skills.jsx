@@ -3,12 +3,12 @@ import HardSkills from "./HardSkills";
 
 const Skills = () => {
   return (
-    <div className="md:min-w-screen md:min-h-screen min-h-screen">
-      <div className="flex">
+    <div className="min-h-screen">
+      <div className="md:flex">
         {/* technical skills */}
-        <div className="bg-peach w-full">
-          <h1 className="name w-fit py-2 px-4 shadow-md bg-dirtyWhite rounded-lg md:text-3xl mx-auto mt-10 mb-6 text-gray-900 text-center">
-            HARD Skills
+        <div className="w-full bg-darkPeach">
+          <h1 className="name w-fit py-2 px-4 shadow-md bg-dirtyWhite rounded-lg md:text-3xl mx-auto my-12 text-gray-900 text-center">
+            Technical Skills
           </h1>
 
           <div className="md:flex">
@@ -18,12 +18,12 @@ const Skills = () => {
         </div>
 
         {/* diagonal separator */}
-        <div className="bg-white md:border-l-[12rem] border-l-[4rem] border-l-peach md:border-b-[39rem] border-b-[49rem] border-b-dirtyWhite"></div>
+        <div className="invisible md:visible bg-white md:border-l-[12rem] border-l-[4rem] border-darkPeach md:border-b-[39rem] border-b-[49rem] border-b-dirtyWhite"></div>
 
         {/* soft skills */}
-        <div className="bg-dirtyWhite w-full relative">
-          <h1 className="name text-center w-fit py-2 px-4 shadow-md bg-peach rounded-lg md:text-3xl md:mx-auto mx-6 my-8 md:my-20 text-black">
-            SOFT Skills
+        <div className="w-full relative bg-dirtyWhite">
+          <h1 className="name w-fit py-2 px-4 shadow-md bg-darkPeach rounded-lg md:text-3xl mx-auto my-12 text-white text-center">
+            Skills
           </h1>
         </div>
       </div>
