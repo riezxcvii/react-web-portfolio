@@ -1,5 +1,6 @@
 import React from "react";
 import HardSkills from "./HardSkills";
+import SoftSkills from "./SoftSkills";
 
 const Skills = () => {
   return (
@@ -25,6 +26,11 @@ const Skills = () => {
           <h1 className="name w-fit py-2 px-4 shadow-md bg-darkPeach rounded-lg md:text-3xl mx-auto my-12 text-white text-center">
             Skills
           </h1>
+
+          <div className="md:flex">
+            {/* skill set */}
+            <SoftSkills />
+          </div>
         </div>
       </div>
     </div>
