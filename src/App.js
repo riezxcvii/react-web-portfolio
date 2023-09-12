@@ -1,4 +1,5 @@
 import Contact from "./components/Contact";
+import Experiences from "./components/Experiences";
 import Skills from "./components/Skills";
 
 function App() {
@@ -9,6 +10,9 @@ function App() {
 
       {/* skills section */}
       <Skills />
+
+      {/* experience and projects section */}
+      <Experiences />
     </div>
   );
 }
