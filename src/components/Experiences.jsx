@@ -1,12 +1,6 @@
 import React from "react";
-// import "flowbite/dist/flowbite.css";
 import "flowbite";
-import StackTrekLogo from "../assets/img/stacktrek/stacktrek-logo.png";
-import st1 from "../assets/img/stacktrek/stacktrek-photoshoot.jpg";
-import st2 from "../assets/img/stacktrek/stacktrek-working.jpeg";
-import st3 from "../assets/img/stacktrek/stacktrek-meeting.jpg";
-import st4 from "../assets/img/stacktrek/stacktrek-group.JPG";
-import st5 from "../assets/img/stacktrek/stacktrek-working2.jpg";
+import StackTrekLogo from "../assets/img/stacktrek-logo.png";
 
 const Experiences = () => {
   return (
