@@ -9,9 +9,7 @@ import Header from "./Header";
 
 const Main = () => {
   // set value for Header state
-  const [header] = useState([
-    { title: "Developer's Profile", id: 1 },
-  ]);
+  const [header] = useState([{ title: "Developer's Profile", id: 1 }]);
 
   // set array value and call it in the profile section
   const [links] = useState([
