@@ -21,7 +21,7 @@ const Experiences = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-dirtyWhite to-lightPeach">
-      <h1 className="name p-8 md:text-4xl">Experiences</h1>
+      <h1 className="name p-8 md:text-4xl">EXPERIENCES</h1>
 
       {/* list of experiences */}
       <ol className="px-8 flex flex-wrap">
