@@ -1,6 +1,6 @@
 <h2>
     📁Web Portfolio
-    <img width="11%" src="https://badgen.net/badge/status/ongoing/red" />
+    <img width="13%" style="vertical-align:middle" src="https://badgen.net/badge/status/ongoing/red" />
 </h2>
 
 📝 My personal web portfolio
