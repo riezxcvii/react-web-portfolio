@@ -1,22 +1,29 @@
-import Contact from "./components/Contact";
-import Experiences from "./components/Experiences";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
-      {/* main page */}
-      <Contact />
+      {/* Background */}
+      <ul className="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
 
-      {/* skills section */}
-      <Skills />
-
-      {/* experiences section */}
-      <Experiences />
-
-      {/* projects section */}
-      <Projects />
+      {/* Navigation Bar */}
+      <Navbar />
     </div>
   );
 }
