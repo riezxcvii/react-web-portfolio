@@ -1,10 +1,11 @@
+import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
       {/* Background */}
-      <ul className="background">
+      <ul className="background z-10">
         <li></li>
         <li></li>
         <li></li>
@@ -22,8 +23,8 @@ function App() {
         <li></li>
       </ul>
 
-      {/* Navigation Bar */}
       <Navbar />
+      <Home />
     </div>
   );
 }

@@ -9,7 +9,7 @@ const Navbar = () => {
 
   // Set array value for navigation links and call it in the list
   const [navigation] = useState([
-    { page: "Home", link: "", id: 1 },
+    { page: "Home", link: "#home", id: 1 },
     { page: "Skills", link: "", id: 2 },
     { page: "Projects", link: "", id: 3 },
     { page: "Experience", link: "", id: 4 },
@@ -20,16 +20,18 @@ const Navbar = () => {
     <div>
       <nav className="bg-[#6D72DF] border-gray-200 fixed w-full z-20 top-0 start-0">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <span className="title  self-center text-2xl font-semibold whitespace-nowrap text-white">
+          <span className="title  self-center text-2xl font-semibold whitespace-nowrap text-white cursor-default select-none">
             Rieza Banquillo
           </span>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button
-              type="button"
-              className="text-[#5f65da] bg-white shadow-lg focus:ring-2 focus:outline-none focus:ring-[#5f65da] font-medium rounded-lg text-sm px-4 py-2 text-center"
-            >
-              Hire Me
-            </button>
+            <a href="mailto:rizmarezlo@gmail.com">
+              <button
+                type="button"
+                className="text-[#41469e] bg-white shadow-lg focus:ring-2 focus:outline-none focus:ring-[#5f65da] font-medium rounded-lg text-sm px-4 py-2 text-center"
+              >
+                Hire Me
+              </button>
+            </a>
             <button
               onClick={toggleDrawer}
               type="button"
