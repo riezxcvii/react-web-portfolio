@@ -9,14 +9,14 @@ const Home = () => {
       link: "https://www.linkedin.com/in/riezamarie-banquillo/",
       logo: Linkedin,
       alt: "LinkedIn",
-      style: "md:w-[2rem] w-[2.3rem] mx-auto my-3",
+      style: "w-[2rem] mx-auto my-3 shadow-lg",
       id: 1,
     },
     {
       link: "https://github.com/rieza-ix",
       logo: GitHub,
       alt: "GitHub",
-      style: "md:w-[1.9rem] w-[2.3rem] mx-auto my-3",
+      style: "w-[1.9rem] mx-auto my-3 shadow-lg",
       id: 2,
     },
   ]);
@@ -39,7 +39,7 @@ const Home = () => {
 
         <hr className="border-2" />
 
-        <p className="text-white md:text-base text-sm whitespace-normal cursor-default select-none">
+        <p className="text-white md:text-lg text-base whitespace-normal cursor-default select-none tracking-wider">
           I'm dedicated to leveraging cutting-edge technologies to bring your
           visions to life. Let's collaborate and elevate your digital presence
           with expertise and creativity.

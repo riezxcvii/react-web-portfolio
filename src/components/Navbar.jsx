@@ -18,16 +18,16 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="bg-[#9c5fce] border-gray-200 fixed w-full z-20 top-0 start-0">
+      <nav className="bg-[#9c5fce] border-gray-200 fixed w-full z-20 top-0 start-0 shadow-md">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <span className="title  self-center text-2xl font-semibold whitespace-nowrap text-white cursor-default select-none">
-            Rieza Banquillo
+            Portfolio
           </span>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <a href="mailto:rizmarezlo@gmail.com">
               <button
                 type="button"
-                className="text-black bg-white shadow-lg focus:ring-2 focus:outline-none focus:ring-[#5f65da] font-medium rounded-lg text-sm px-4 py-[0.35rem] md:my-0 my-1 text-center"
+                className="text-black bg-white shadow-md focus:ring-2 focus:outline-none focus:ring-[#5f65da] font-medium rounded-lg text-sm px-4 py-[0.35rem] md:my-0 my-1 text-center"
               >
                 Hire Me
               </button>
