@@ -28,7 +28,7 @@ const Home = () => {
           <h3 className="title md:text-4xl text-2xl text-white cursor-default select-none">
             Hi, I'm
           </h3>
-          <h3 className="title text-[#41469e] bg-white rounded-md w-fit h-fit py-1 px-3 shadow-md md:text-base text-sm cursor-default select-none">
+          <h3 className="title text-black bg-white rounded-md w-fit h-fit py-1 px-3 shadow-md md:text-base text-sm cursor-default select-none">
             Developer
           </h3>
         </div>

@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="bg-[#6D72DF] border-gray-200 fixed w-full z-20 top-0 start-0">
+      <nav className="bg-[#9c5fce] border-gray-200 fixed w-full z-20 top-0 start-0">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <span className="title  self-center text-2xl font-semibold whitespace-nowrap text-white cursor-default select-none">
             Rieza Banquillo
@@ -27,7 +27,7 @@ const Navbar = () => {
             <a href="mailto:rizmarezlo@gmail.com">
               <button
                 type="button"
-                className="text-[#41469e] bg-white shadow-lg focus:ring-2 focus:outline-none focus:ring-[#5f65da] font-medium rounded-lg text-sm px-4 py-2 text-center"
+                className="text-black bg-white shadow-lg focus:ring-2 focus:outline-none focus:ring-[#5f65da] font-medium rounded-lg text-sm px-4 py-[0.35rem] md:my-0 my-1 text-center"
               >
                 Hire Me
               </button>
@@ -62,7 +62,7 @@ const Navbar = () => {
             id="drawer-right"
             className={`fixed top-0 right-0 z-50 h-screen p-4 overflow-y-auto transition-transform ${
               isDrawerOpen ? "" : "translate-x-full"
-            } bg-[#5f65da] w-52`}
+            } bg-[#9b57d4] w-52`}
             tabIndex={isDrawerOpen ? 0 : -1}
             aria-labelledby="drawer-right-label"
           >
@@ -106,7 +106,7 @@ const Navbar = () => {
 
           {/* Navigation links in desktop view */}
           <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#6D72DF] md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-[#6D72DF] dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#9c5fce] md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-[#9c5fce] dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               {navigation.map((navLink) => (
                 <li key={navLink.id}>
                   <a
