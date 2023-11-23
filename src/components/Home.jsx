@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Linkedin from "../assets/svg/linkedin.svg";
 import GitHub from "../assets/svg/github.svg";
+import Resume from "../assets/svg/resume.svg";
 
 const Home = () => {
   // Set array value and call it in the profile section
@@ -18,6 +19,13 @@ const Home = () => {
       alt: "GitHub",
       style: "w-[1.9rem] mx-auto my-3 shadow-lg",
       id: 2,
+    },
+    {
+      link: "https://drive.google.com/file/d/1XhFQia7jhJ7OIRPqGLUo8GLuh-Jlyf8o/view?usp=sharing",
+      logo: Resume,
+      alt: "Resume",
+      style: "w-[1.9rem] mx-auto my-3 shadow-lg",
+      id: 3,
     },
   ]);
 
