@@ -10,7 +10,7 @@ const Navbar = () => {
   // Set array value for navigation links and call it in the list
   const [navigation] = useState([
     { page: "Home", link: "#home", id: 1 },
-    { page: "Skills", link: "", id: 2 },
+    { page: "Skills", link: "#skills", id: 2 },
     { page: "Projects", link: "", id: 3 },
     { page: "Experience", link: "", id: 4 },
     { page: "Education", link: "", id: 5 },
