@@ -1,7 +1,7 @@
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import TechnicalSkills from "./components/TechnicalSkills";
-import Tools from "./components/Tools";
+import ToolsUsed from "./components/ToolsUsed";
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
       <Navbar />
       <Home />
       <TechnicalSkills />
-      <Tools />
+      <ToolsUsed />
     </div>
   );
 }

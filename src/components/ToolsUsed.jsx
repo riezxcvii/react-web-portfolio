@@ -1,33 +1,25 @@
 import React, { useState, useRef, useEffect } from "react";
-import html5 from "../assets/svg/html.svg";
-import css from "../assets/svg/css.svg";
-import java from "../assets/svg/java.svg";
-import javascript from "../assets/svg/javascript.svg";
-import php from "../assets/svg/php.svg";
-import mysql from "../assets/svg/mysql.svg";
-import javaswing from "../assets/img/javaswing.png";
-import rjs from "../assets/svg/rjs.svg";
-import nextjs from "../assets/svg/next-js.svg";
-import tailwind from "../assets/svg/tailwind-css.svg";
+import git from "../assets/svg/git.svg";
+import github from "../assets/svg/github.svg";
+import vscode from "../assets/svg/vs-code.svg";
+import netbeans from "../assets/img/netbeans.png";
+import canva from "../assets/svg/canva.svg";
+import figma from "../assets/svg/figma.svg";
 import previous from "../assets/svg/previous.svg";
 import next from "../assets/svg/next.svg";
 
-const TechnicalSkills = () => {
-  // Set array value for hard skills and call it in the list
-  const [hardSkills] = useState([
-    { skill: "HTML", logo: html5, alt: "HTML Logo", id: 1 },
-    { skill: "CSS", logo: css, alt: "CSS Logo", id: 2 },
-    { skill: "Java", logo: java, alt: "Java Logo", id: 3 },
-    { skill: "JavaScript", logo: javascript, alt: "JavaScript Logo", id: 4 },
-    { skill: "PHP", logo: php, alt: "PHP Logo", id: 5 },
-    { skill: "MySQL", logo: mysql, alt: "MySQL Logo", id: 6 },
-    { skill: "React", logo: rjs, alt: "React Logo", id: 7 },
-    { skill: "Next.js", logo: nextjs, alt: "Next.js Logo", id: 8 },
-    { skill: "Tailwind CSS", logo: tailwind, alt: "Tailwind CSS Logo", id: 9 },
-    { skill: "Java Swing", logo: javaswing, alt: "Java Swing Logo", id: 10 },
+const ToolsUsed = () => {
+  // Set array value for tools used and call it in the list
+  const [toolsUsed] = useState([
+    { skill: "Canva", logo: canva, alt: "Canva Logo", id: 1 },
+    { skill: "Figma", logo: figma, alt: "Figma Logo", id: 2 },
+    { skill: "VS Code", logo: vscode, alt: "VS Code Logo", id: 3 },
+    { skill: "Git", logo: git, alt: "Git Logo", id: 4 },
+    { skill: "GitHub", logo: github, alt: "GitHub Logo", id: 5 },
+    { skill: "NetBeans", logo: netbeans, alt: "NetBeans Logo", id: 6 },
   ]);
 
-  hardSkills.sort((a, b) => b.id - a.id); // Sort the 'hardSkills' array in descending order based on the 'id' property
+  toolsUsed.sort((a, b) => b.id - a.id); // Sort the 'toolsUsed' array in descending order based on the 'id' property
 
   // JavaScript code for previous and next button
   const containerRef = useRef();
@@ -67,9 +59,9 @@ const TechnicalSkills = () => {
   }, [containerRef]);
 
   return (
-    <div id="skills" className="md:mb-4 mb-10">
-      <h1 className="name md:py-4 py-0 md:text-3xl text-2xl px-8 rounded-lg w-full text-white">
-        TECHNICAL SKILLS
+    <div className="md:mb-4 mb-10">
+      <h1 className="name md:text-3xl text-2xl px-8 md:py-4 py-0 rounded-lg w-full text-white">
+        TOOLS USED
       </h1>
 
       <div className="flex px-8">
@@ -89,19 +81,19 @@ const TechnicalSkills = () => {
           ref={containerRef}
           className="md:h-[11.5rem] h-[13rem] w-[78rem] items-center mx-auto overflow-x-hidden px-0 py-6 flex justify-start gap-8"
         >
-          {hardSkills.map((hs) => (
+          {toolsUsed.map((ts) => (
             <li
-              key={hs.id}
+              key={ts.id}
               className="h-32 bg-white text-black rounded-md w-32 px-4 py-4"
             >
               <div className="flex flex-col w-24 items-center justify-end h-full text-center">
                 <img
-                  src={hs.logo}
+                  src={ts.logo}
                   className="w-auto h-11 justify-between m-auto"
-                  alt={hs.alt}
+                  alt={ts.alt}
                 />
                 <span className="title tracking-wide md:text-base text-sm align-middle my-auto flex">
-                  {hs.skill}
+                  {ts.skill}
                 </span>
               </div>
             </li>
@@ -123,4 +115,4 @@ const TechnicalSkills = () => {
   );
 };
 
-export default TechnicalSkills;
+export default ToolsUsed;

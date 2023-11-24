@@ -232,6 +232,7 @@ body {
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -240,46 +241,4 @@ body {
 
 ::-webkit-scrollbar-track {
   background-color: #eee;
-}
-
-
-.carousel {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-width: 600px; /* Adjust as needed */
-  margin: 0 auto;
-}
-
-.carousel-content {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.slide {
-  min-width: 100%;
-  box-sizing: border-box;
-}
-
-.active {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.arrow-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-
-.left-arrow {
-  left: 0;
-}
-
-.right-arrow {
-  right: 0;
 }
