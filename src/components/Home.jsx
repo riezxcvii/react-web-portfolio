@@ -31,9 +31,9 @@ const Home = () => {
 
   return (
     <div id="home" className="flex items-center justify-center h-screen">
-      <div className="m-auto block p-8 md:w-[42.8rem] w-[23.45rem] md:space-y-4 space-y-2">
+      <div className="m-auto block p-8 md:w-[42.8rem] w-[20.3rem] md:space-y-4 space-y-2">
         <div className="flex justify-between">
-          <h3 className="title md:text-4xl text-2xl text-white cursor-default select-none">
+          <h3 className="title md:text-4xl text-xl text-white cursor-default select-none">
             Hi, I'm
           </h3>
           <h3 className="title text-black bg-white rounded-md w-fit h-fit py-1 px-3 shadow-md md:text-base text-sm cursor-default select-none">
@@ -41,7 +41,7 @@ const Home = () => {
           </h3>
         </div>
 
-        <h1 className="name md:text-7xl text-4xl text-white uppercase cursor-default select-none">
+        <h1 className="name md:text-7xl text-3xl text-white uppercase cursor-default select-none">
           Rieza Banquillo
         </h1>
 

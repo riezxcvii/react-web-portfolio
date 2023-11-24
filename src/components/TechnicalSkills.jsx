@@ -67,12 +67,12 @@ const TechnicalSkills = () => {
   }, [containerRef]);
 
   return (
-    <div id="skills" className="md:mb-4 mb-10">
+    <div id="skills" className="md:mb-6">
       <h1 className="name md:py-4 py-0 md:text-3xl text-2xl px-8 rounded-lg w-full text-white">
         TECHNICAL SKILLS
       </h1>
 
-      <div className="flex px-8">
+      <div className="flex px-8 h-full">
         {/* Previous button */}
         {isScrollable && (
           <img
@@ -87,12 +87,12 @@ const TechnicalSkills = () => {
         {/* Skill set */}
         <ul
           ref={containerRef}
-          className="md:h-[11.5rem] h-[13rem] w-[78rem] items-center mx-auto overflow-x-hidden px-0 py-6 flex justify-start gap-8"
+          className="h-full w-[78rem] items-center mx-auto overflow-x-hidden px-0 py-6 flex justify-start gap-8"
         >
           {hardSkills.map((hs) => (
             <li
               key={hs.id}
-              className="h-32 bg-white text-black rounded-md w-32 px-4 py-4"
+              className="md:h-32 h-36 bg-white text-black rounded-md w-32 px-4 py-4"
             >
               <div className="flex flex-col w-24 items-center justify-end h-full text-center">
                 <img

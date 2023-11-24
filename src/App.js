@@ -27,8 +27,15 @@ function App() {
 
       <Navbar />
       <Home />
-      <TechnicalSkills />
-      <ToolsUsed />
+
+      <div className="min-h-screen pt-[4rem] flex flex-col justify-between">
+        <div className="my-auto">
+          <TechnicalSkills />
+        </div>
+        <div className="my-auto">
+          <ToolsUsed />
+        </div>
+      </div>
     </div>
   );
 }

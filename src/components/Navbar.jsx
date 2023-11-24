@@ -62,7 +62,7 @@ const Navbar = () => {
             id="drawer-right"
             className={`fixed top-0 right-0 z-50 h-screen p-4 overflow-y-auto transition-transform ${
               isDrawerOpen ? "" : "translate-x-full"
-            } bg-[#9b57d4] w-52`}
+            } bg-[#964dd2] w-52`}
             tabIndex={isDrawerOpen ? 0 : -1}
             aria-labelledby="drawer-right-label"
           >

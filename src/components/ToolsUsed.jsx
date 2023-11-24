@@ -59,12 +59,12 @@ const ToolsUsed = () => {
   }, [containerRef]);
 
   return (
-    <div className="md:mb-4 mb-10">
+    <div className="md:mb-6 h-full">
       <h1 className="name md:text-3xl text-2xl px-8 md:py-4 py-0 rounded-lg w-full text-white">
         TOOLS USED
       </h1>
 
-      <div className="flex px-8">
+      <div className="flex px-8 h-full">
         {/* Previous button */}
         {isScrollable && (
           <img
@@ -79,12 +79,12 @@ const ToolsUsed = () => {
         {/* Skill set */}
         <ul
           ref={containerRef}
-          className="md:h-[11.5rem] h-[13rem] w-[78rem] items-center mx-auto overflow-x-hidden px-0 py-6 flex justify-start gap-8"
+          className="h-full w-[78rem] items-center mx-auto overflow-x-hidden px-0 py-6 flex justify-start gap-8"
         >
           {toolsUsed.map((ts) => (
             <li
               key={ts.id}
-              className="h-32 bg-white text-black rounded-md w-32 px-4 py-4"
+              className="md:h-32 h-36 bg-white text-black rounded-md w-32 px-4 py-4"
             >
               <div className="flex flex-col w-24 items-center justify-end h-full text-center">
                 <img
