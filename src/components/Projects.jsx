@@ -13,6 +13,7 @@ const Projects = () => {
   const [projects] = useState([
     {
       title: "ANS Library Management System",
+      description: "HTML • Tailwind CSS • PHP • MySQL",
       desktop: anslmsD,
       mobile: anslmsM,
       mobileVisibility: "block",
@@ -21,6 +22,7 @@ const Projects = () => {
     },
     {
       title: "StackTrek Scheduling System",
+      description: "Next.js • Tailwind CSS • Prisma • Supabase",
       desktop: stackschedD,
       mobile: stackschedM,
       mobileVisibility: "block",
@@ -29,6 +31,7 @@ const Projects = () => {
     },
     {
       title: "Appointment System",
+      description: "Java • Java Swing • JDBC • MySQL",
       desktop: appointment,
       mobileVisibility: "hidden",
       alt: "Appointment System - Login Page",
@@ -36,6 +39,7 @@ const Projects = () => {
     },
     {
       title: "Inventory System",
+      description: "Java • Java Swing • JDBC • MySQL",
       desktop: inventory,
       mobileVisibility: "hidden",
       alt: "Inventory System - Dashboard Page",
@@ -84,7 +88,7 @@ const Projects = () => {
 
   return (
     <div>
-      <div id="projects" className="">
+      <div id="projects">
         <h1 className="name md:py-4 py-0 md:text-3xl text-2xl px-8 rounded-lg w-full text-white">
           PROJECTS
         </h1>
@@ -107,12 +111,12 @@ const Projects = () => {
             className="items-center mx-auto overflow-x-hidden px-0 py-3 flex justify-start gap-8"
           >
             {projects.map((p) => (
-              <li key={p.id} className="text-black rounded-md p-6">
+              <li key={p.id} className="text-black rounded-md px-6 py-4">
                 <div className="flex justify-between space-x-4">
                   {/* Desktop mockup */}
                   <div>
-                    <div className="relative mx-auto border-black bg-gray-black border-[16px] rounded-t-xl w-fit bg-black">
-                      <div className="rounded-xl overflow-hidden w-[27rem]">
+                    <div className="relative mx-auto border-black bg-gray-black border-[16px] rounded-t-xl w-full h-fit bg-black">
+                      <div className="rounded-xl overflow-hidden w-[24rem]">
                         {/* Screen image */}
                         <img
                           src={p.desktop}
@@ -147,11 +151,10 @@ const Projects = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col items-center justify-end h-max text-center">
+                <div className="flex flex-col items-center justify-end h-max space-y-2 w-full text-center tracking-wide bg-white p-4 rounded-md shadow-lg mt-4">
                   {/* Project title */}
-                  <span className="name w-full text-center tracking-wide md:text-xl text-sm bg-white p-4 rounded-md shadow-lg mt-4">
-                    {p.title}
-                  </span>
+                  <span className="name md:text-xl text-sm ">{p.title}</span>
+                  <span className="md:text-base text-sm ">{p.description}</span>
                 </div>
               </li>
             ))}
