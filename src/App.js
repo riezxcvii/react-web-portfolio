@@ -1,5 +1,6 @@
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
 import TechnicalSkills from "./components/TechnicalSkills";
 import ToolsUsed from "./components/ToolsUsed";
 
@@ -28,7 +29,7 @@ function App() {
       <Navbar />
       <Home />
 
-      <div className="min-h-screen pt-[4rem] flex flex-col justify-between">
+      <div className="min-h-screen flex flex-col justify-between">
         <div className="my-auto">
           <TechnicalSkills />
         </div>
@@ -36,6 +37,8 @@ function App() {
           <ToolsUsed />
         </div>
       </div>
+
+      <Projects />
     </div>
   );
 }

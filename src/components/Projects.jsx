@@ -1,58 +1,174 @@
-import React, { useState } from "react";
-import "flowbite";
-import GitHub from "../assets/svg/github.svg";
+import React, { useState, useRef, useEffect } from "react";
+import anslmsD from "../assets/img/desktop-ans-lms.png";
+import anslmsM from "../assets/img/mobile-ans-lms.png";
+import stackschedD from "../assets/img/desktop-stack-sched.png";
+import stackschedM from "../assets/img/mobile-stack-sched.png";
+import appointment from "../assets/img/desktop-appointment-system.png";
+import inventory from "../assets/img/desktop-inventory-system.png";
+import previous from "../assets/svg/previous.svg";
+import next from "../assets/svg/next.svg";
 
 const Projects = () => {
-  // set array value for projects and call it in the list
+  // Set array value for hard skills and call it in the list
   const [projects] = useState([
     {
-      title: "Library Management System",
-      subTitle: "Capstone Project",
-      year: " • 2022",
-      description:
-        "An automated library system for Antique National School built using HTML, Tailwind CSS, PHP, and MySQL.",
-      link: "https://github.com/rieza-ix/library-management-system",
+      title: "ANS Library Management System",
+      desktop: anslmsD,
+      mobile: anslmsM,
+      mobileVisibility: "block",
+      alt: "ANS LMS - Login Page",
       id: 1,
     },
     {
-      title: "Scheduling System",
-      subTitle: "OJT Project",
-      year: " • 2023",
-      description:
-        "A scheduling system created for part-time trainers from StackTrek built with Next.js, TailwindCSS, and Supabase.",
-      link: "https://github.com/Stacktrek-Training/stack-sched",
+      title: "StackTrek Scheduling System",
+      desktop: stackschedD,
+      mobile: stackschedM,
+      mobileVisibility: "block",
+      alt: "StackSched - Scheduling Page",
       id: 2,
+    },
+    {
+      title: "Appointment System",
+      desktop: appointment,
+      mobileVisibility: "hidden",
+      alt: "Appointment System - Login Page",
+      id: 3,
+    },
+    {
+      title: "Inventory System",
+      desktop: inventory,
+      mobileVisibility: "hidden",
+      alt: "Inventory System - Dashboard Page",
+      id: 4,
     },
   ]);
 
-  projects.sort((a, b) => b.id - a.id); // sort the 'projects' array in descending order based on the 'id' property
+  projects.sort((a, b) => b.id - a.id); // Sort the 'projects' array in descending order based on the 'id' property
+
+  // JavaScript code for previous and next button
+  const containerRef = useRef();
+  const [isScrollable, setIsScrollable] = useState(false);
+
+  const scrollSkills = (direction) => {
+    const container = containerRef.current;
+
+    if (container) {
+      const scrollAmount = container.offsetWidth;
+
+      if (direction === "next") {
+        container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      } else if (direction === "previous") {
+        container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      }
+    }
+  };
+
+  useEffect(() => {
+    const container = containerRef.current;
+
+    const handleScroll = () => {
+      if (container) {
+        const hasScrollbar = container.scrollWidth > container.clientWidth;
+        setIsScrollable(hasScrollbar);
+      }
+    };
+
+    container.addEventListener("scroll", handleScroll);
+
+    handleScroll();
+
+    return () => {
+      container.removeEventListener("scroll", handleScroll);
+    };
+  }, [containerRef]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-dirtyWhite to-lightPeach">
-      <h1 className="name p-8 md:text-4xl">PROJECTS</h1>
+    <div>
+      <div id="projects" className="">
+        <h1 className="name md:py-4 py-0 md:text-3xl text-2xl px-8 rounded-lg w-full text-white">
+          PROJECTS
+        </h1>
 
-      <ol className="px-8 flex flex-wrap">
-        {projects.map((project) => (
-          <li key={project.id}>
-            <div className="bg-dirtyWhite p-6 m-[0.85rem] h-[10.8rem] w-[25rem] rounded-lg shadow-md flex">
-              <div className="w-[38rem]">
-                <h1 className="title text-xl">{project.title}</h1>
-                <div className="flex items-center">
-                  <h2 className="text-lg mb-2">{project.subTitle}</h2>
-                  <h3 className="text-xs mb-2 ml-2">{project.year}</h3>
+        <div className="flex px-8 h-full">
+          {/* Previous button */}
+          {isScrollable && (
+            <img
+              src={previous}
+              id="previous"
+              className="w-12 font-extrabold"
+              alt="Go to previous"
+              onClick={() => scrollSkills("previous")}
+            />
+          )}
+
+          {/* Project list */}
+          <ul
+            ref={containerRef}
+            className="items-center mx-auto overflow-x-hidden px-0 py-3 flex justify-start gap-8"
+          >
+            {projects.map((p) => (
+              <li key={p.id} className="text-black rounded-md p-6">
+                <div className="flex justify-between space-x-4">
+                  {/* Desktop mockup */}
+                  <div>
+                    <div className="relative mx-auto border-black bg-gray-black border-[16px] rounded-t-xl w-fit bg-black">
+                      <div className="rounded-xl overflow-hidden w-[27rem]">
+                        {/* Screen image */}
+                        <img
+                          src={p.desktop}
+                          className="dark:hidden h-[140px] md:h-full w-full rounded-xl my-0"
+                          alt={p.alt}
+                        />
+                      </div>
+                    </div>
+                    <div className="relative mx-auto bg-gray-200 rounded-b-xl h-[24px] max-w-[301px] md:h-[28px] md:max-w-[512px]"></div>
+                    <div className="relative mx-auto bg-gray-200 shadow-lg rounded-b-xl h-[55px] max-w-[83px] md:h-[40px] md:max-w-[85px]"></div>
+                  </div>
+
+                  {/* Phone mockup */}
+                  <div className={p.mobileVisibility}>
+                    <div class="relative mx-auto border-black border-[10px] rounded-[2rem] h-[300px] w-[170px] shadow-xl">
+                      {/* Notch */}
+                      <div class="w-[70px] h-[11px] bg-black top-0 mt-[-0.35rem] rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
+                      {/* Volume up */}
+                      <div class="h-[30px] w-[3px] bg-black absolute -start-[13px] top-[50px] rounded-s-lg"></div>
+                      {/* Volume down */}
+                      <div class="h-[30px] w-[3px] bg-black absolute -start-[13px] top-[90px] rounded-s-lg"></div>
+                      {/* Power button */}
+                      <div class="h-[45px] w-[3px] bg-black absolute -end-[13px] top-[65px] rounded-e-lg"></div>
+                      <div class="rounded-[1.3rem] overflow-hidden w-full h-full bg-white">
+                        {/* Screen image */}
+                        <img
+                          src={p.mobile}
+                          class="dark:hidden w-full h-full"
+                          alt={p.alt}
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <h2 className="text-sm">{project.description}</h2>
-              </div>
+                <div className="flex flex-col items-center justify-end h-max text-center">
+                  {/* Project title */}
+                  <span className="name w-full text-center tracking-wide md:text-xl text-sm bg-white p-4 rounded-md shadow-lg mt-4">
+                    {p.title}
+                  </span>
+                </div>
+              </li>
+            ))}
+          </ul>
 
-              <div className="text-sm justify-center my-auto items-center w-20 py-4 space-y-4 px-1">
-                <a href={project.link} target="_blank">
-                  <img src={GitHub} alt="GitHub" />
-                </a>
-              </div>
-            </div>
-          </li>
-        ))}
-      </ol>
+          {/* Next button */}
+          {isScrollable && (
+            <img
+              src={next}
+              id="next"
+              className="w-12 font-extrabold"
+              alt="Go to next"
+              onClick={() => scrollSkills("next")}
+            />
+          )}
+        </div>
+      </div>
     </div>
   );
 };

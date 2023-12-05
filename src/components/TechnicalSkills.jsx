@@ -67,7 +67,7 @@ const TechnicalSkills = () => {
   }, [containerRef]);
 
   return (
-    <div id="skills" className="md:mb-6">
+    <div id="skills" className="md:mb-6 pt-[5rem]">
       <h1 className="name md:py-4 py-0 md:text-3xl text-2xl px-8 rounded-lg w-full text-white">
         TECHNICAL SKILLS
       </h1>
