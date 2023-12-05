@@ -111,7 +111,7 @@ const Projects = () => {
             className="items-center mx-auto overflow-x-hidden px-0 py-3 flex justify-start gap-8"
           >
             {projects.map((p) => (
-              <li key={p.id} className="text-black rounded-md px-6 py-4">
+              <li key={p.id} className="text-black rounded-md px-6 py-3">
                 <div className="flex justify-between space-x-4">
                   {/* Desktop mockup */}
                   <div>
