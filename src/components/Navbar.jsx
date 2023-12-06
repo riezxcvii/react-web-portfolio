@@ -12,8 +12,6 @@ const Navbar = () => {
     { page: "Home", link: "#home", id: 1 },
     { page: "Skills", link: "#skills", id: 2 },
     { page: "Projects", link: "#projects", id: 3 },
-    { page: "Experience", link: "", id: 4 },
-    { page: "Education", link: "", id: 5 },
   ]);
 
   return (
@@ -94,7 +92,7 @@ const Navbar = () => {
                 <li key={navLink.id}>
                   <a
                     href={navLink.link}
-                    className="block py-2 px-3 text-white rounded md:p-0 hover:underline hover:underline-offset-4"
+                    className="flex py-2 px-3 text-white rounded md:p-0 hover:underline hover:underline-offset-4"
                     aria-current="page"
                   >
                     {navLink.page}
@@ -111,7 +109,7 @@ const Navbar = () => {
                 <li key={navLink.id}>
                   <a
                     href={navLink.link}
-                    className="block py-2 px-3 text-white rounded md:p-0 hover:underline hover:underline-offset-4"
+                    className="flex py-2 px-3 text-white rounded md:p-0 hover:underline hover:underline-offset-4"
                     aria-current="page"
                   >
                     {navLink.page}

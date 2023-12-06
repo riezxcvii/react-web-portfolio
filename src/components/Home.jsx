@@ -7,23 +7,23 @@ const Home = () => {
   // Set array value and call it in the profile section
   const [links] = useState([
     {
+      link: "https://drive.google.com/file/d/1XhFQia7jhJ7OIRPqGLUo8GLuh-Jlyf8o/view?usp=sharing",
+      logo: Resume,
+      alt: "Resume",
+      style: "w-[1.9rem] mx-auto my-3 shadow-lg",
+      id: 1,
+    },
+    {
       link: "https://www.linkedin.com/in/riezamarie-banquillo/",
       logo: Linkedin,
       alt: "LinkedIn",
       style: "w-[2rem] mx-auto my-3 shadow-lg",
-      id: 1,
+      id: 2,
     },
     {
       link: "https://github.com/rieza-ix",
       logo: GitHub,
       alt: "GitHub",
-      style: "w-[1.9rem] mx-auto my-3 shadow-lg",
-      id: 2,
-    },
-    {
-      link: "https://drive.google.com/file/d/1XhFQia7jhJ7OIRPqGLUo8GLuh-Jlyf8o/view?usp=sharing",
-      logo: Resume,
-      alt: "Resume",
       style: "w-[1.9rem] mx-auto my-3 shadow-lg",
       id: 3,
     },
