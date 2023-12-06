@@ -59,8 +59,8 @@ const ToolsUsed = () => {
   }, [containerRef]);
 
   return (
-    <div className="md:mb-6 h-full">
-      <h1 className="name md:text-3xl text-2xl px-8 md:py-4 py-0 rounded-lg w-full text-white">
+    <div>
+      <h1 className="name text-3xl px-8 md:py-4 py-0 rounded-lg w-full text-white">
         TOOLS USED
       </h1>
 

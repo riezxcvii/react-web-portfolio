@@ -30,7 +30,7 @@ function App() {
       <Home />
 
       <div className="min-h-screen flex flex-col justify-between">
-        <div className="my-auto">
+        <div id="skills" className="my-auto">
           <TechnicalSkills />
         </div>
         <div className="my-auto">
@@ -38,7 +38,9 @@ function App() {
         </div>
       </div>
 
-      <Projects />
+      <div id="projects" className="min-h-screen flex flex-col justify-center">
+        <Projects />
+      </div>
     </div>
   );
 }
