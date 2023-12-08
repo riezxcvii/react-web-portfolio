@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import Linkedin from "../assets/svg/linkedin.svg";
 import GitHub from "../assets/svg/github.svg";
-import Resume from "../assets/svg/resume.svg";
+import GMail from "../assets/svg/gmail.svg";
 
 const Home = () => {
   // Set array value and call it in the profile section
   const [links] = useState([
     {
-      link: "https://drive.google.com/file/d/1XhFQia7jhJ7OIRPqGLUo8GLuh-Jlyf8o/view?usp=sharing",
-      logo: Resume,
-      alt: "Resume",
-      style: "w-[1.9rem] mx-auto my-3 shadow-lg",
+      link: "mailto:rizmarezlo@gmail.com",
+      logo: GMail,
+      alt: "GMail",
+      style: "w-[2rem] mx-auto my-3 shadow-lg",
       id: 1,
     },
     {
@@ -24,30 +24,30 @@ const Home = () => {
       link: "https://github.com/rieza-ix",
       logo: GitHub,
       alt: "GitHub",
-      style: "w-[1.9rem] mx-auto my-3 shadow-lg",
+      style: "w-[2rem] mx-auto my-3 shadow-lg",
       id: 3,
     },
   ]);
 
   return (
     <div id="home" className="flex items-center justify-center h-screen">
-      <div className="m-auto block p-8 md:w-[42.8rem] w-[20.3rem] md:space-y-4 space-y-2">
+      <div className="m-auto block p-8 md:w-[42.8rem] w-[24rem] md:space-y-5 space-y-3">
         <div className="flex justify-between">
           <h3 className="title md:text-4xl text-xl text-white cursor-default select-none">
             Hi, I'm
           </h3>
-          <h3 className="title text-black bg-white rounded-md w-fit h-fit py-1 px-3 shadow-md md:text-base text-sm cursor-default select-none">
-            Developer
+          <h3 className="title text-black bg-white rounded-md w-fit h-fit py-2 px-3 shadow-md md:text-base text-xs cursor-default select-none developer appear my-auto">
+            Software Developer
           </h3>
         </div>
 
-        <h1 className="name md:text-7xl text-3xl text-white uppercase cursor-default select-none">
+        <h1 className="name md:text-7xl text-4xl sm:text-2xl text-white uppercase cursor-default select-none">
           Rieza Banquillo
         </h1>
 
         <hr className="border-2" />
 
-        <p className="text-white md:text-lg text-base whitespace-normal cursor-default select-none tracking-wider">
+        <p className="text-white md:text-lg text-sm whitespace-normal cursor-default select-none tracking-wider">
           I'm dedicated to leveraging cutting-edge technologies to bring your
           visions to life. Let's collaborate and elevate your digital presence
           with expertise and creativity.
