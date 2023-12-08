@@ -97,13 +97,13 @@ const Projects = () => {
           PROJECTS
         </h1>
 
-        <div className="flex md:px-8 px-2 md:py-0 py-4 h-full">
+        <div className="flex md:px-8 px-2 md:py-0 py-6 md:h-full h-[37rem]">
           {/* Previous button */}
           {isScrollable && (
             <img
               src={previous}
               id="previous"
-              className="w-12 font-extrabold"
+              className="w-12 font-extrabold md:block hidden"
               alt="Go to previous"
               onClick={() => scrollSkills("previous")}
             />
@@ -112,34 +112,34 @@ const Projects = () => {
           {/* Project list */}
           <ul
             ref={containerRef}
-            className="items-center mx-auto md:overflow-x-hidden overflow-x-auto px-0 py-3 flex justify-start gap-8"
+            className="items-center mx-auto overflow-x-hidden overflow-y-auto px-0 py-3 md:flex block justify-start gap-8"
           >
             {projects.map((p) => (
               <li
                 key={p.id}
-                className="text-black rounded-md md:px-6 px-3 py-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300"
+                className="text-black rounded-md md:px-6 p-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300"
               >
                 <a href={p.github} target="_blank" rel="noreferrer">
                   <div className="flex justify-between space-x-4">
                     {/* Desktop mockup */}
-                    <div className="my-auto">
+                    <div className="m-auto">
                       <div className="relative mx-auto border-black bg-gray-black border-[16px] rounded-t-xl w-full h-fit bg-black">
-                        <div className="rounded-xl overflow-hidden md:w-[24rem] w-[15rem]">
+                        <div className="rounded-xl overflow-hidden md:w-[24rem] w-[12.5rem]">
                           {/* Screen image */}
                           <img
                             src={p.desktop}
-                            className="dark:hidden h-[140px] md:h-full w-full rounded-xl my-0"
+                            className="dark:hidden h-[125px] md:h-full w-full rounded-xl my-0"
                             alt={p.alt}
                           />
                         </div>
                       </div>
-                      <div className="relative mx-auto bg-gray-200 rounded-b-xl h-[24px] max-w-[301px] md:h-[28px] md:max-w-[512px]"></div>
-                      <div className="relative mx-auto bg-gray-200 shadow-lg rounded-b-xl h-[35px] max-w-[83px] md:h-[40px] md:max-w-[85px]"></div>
+                      <div className="relative mx-auto bg-gray-200 rounded-b-xl h-[20px] max-w-[301px] md:h-[28px] md:max-w-[512px]"></div>
+                      <div className="relative mx-auto bg-gray-200 shadow-lg rounded-b-xl h-[30px] max-w-[83px] md:h-[40px] md:max-w-[85px]"></div>
                     </div>
 
                     {/* Phone mockup */}
                     <div className={p.mobileVisibility}>
-                      <div className="relative mx-auto border-black border-[10px] rounded-[2rem] md:h-[300px] h-[235px] md:w-[170px] w-[130px] shadow-xl">
+                      <div className="relative m-auto border-black border-[10px] rounded-[2rem] md:h-[300px] h-[235px] md:w-[170px] w-[125px] shadow-xl">
                         {/* Notch */}
                         <div className="md:w-[70px] w-[50px] h-[11px] bg-black top-0 mt-[-0.35rem] rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
                         {/* Volume up */}
@@ -176,7 +176,7 @@ const Projects = () => {
             <img
               src={next}
               id="next"
-              className="w-12 font-extrabold"
+              className="w-12 font-extrabold md:block hidden"
               alt="Go to next"
               onClick={() => scrollSkills("next")}
             />
