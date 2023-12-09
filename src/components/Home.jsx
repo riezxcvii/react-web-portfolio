@@ -31,7 +31,7 @@ const Home = () => {
 
   return (
     <div id="home" className="flex items-center justify-center h-screen">
-      <div className="m-auto block p-8 md:w-[42.8rem] w-[24rem] md:space-y-5 space-y-3">
+      <div className="m-auto block p-6 md:w-[41.8rem] w-[23rem] md:space-y-5 space-y-3">
         <div className="flex justify-between">
           <h3 className="title md:text-4xl text-xl text-white cursor-default select-none">
             Hi, I'm

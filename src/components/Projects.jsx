@@ -97,7 +97,7 @@ const Projects = () => {
           PROJECTS
         </h1>
 
-        <div className="flex md:px-8 px-0 w-full md:py-0 py-4 md:h-full h-[700px] my-auto">
+        <div className="flex md:px-8 px-6 w-full md:py-0 py-4 md:h-full h-[550px] my-auto">
           {/* Previous button */}
           {isScrollable && (
             <img
@@ -120,7 +120,7 @@ const Projects = () => {
                 className="text-black rounded-md md:p-6 p-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 bg-white"
               >
                 <a href={p.github} target="_blank" rel="noreferrer">
-                  <div className="flex justify-between md:space-x-6 space-x-8">
+                  <div className="flex justify-between md:space-x-6 space-x-1">
                     {/* Desktop mockup */}
                     <div className="m-auto">
                       <div className="relative mx-auto border-black md:border-[10px] border-[8px] rounded-t-xl w-full h-fit bg-black">
