@@ -91,13 +91,13 @@ const Projects = () => {
   }, [containerRef]);
 
   return (
-    <div className="md:pt-[3rem] pt-[4rem]">
-      <div>
-        <h1 className="name md:py-4 py-0 text-3xl px-8 rounded-lg w-full text-white">
+    <div>
+      <div className="pt-[4rem] min-h-screen flex flex-col items-center">
+        <h1 className="name my-auto py-5 text-3xl px-8 rounded-lg w-full text-white text-center">
           PROJECTS
         </h1>
 
-        <div className="flex md:px-8 px-2 md:py-0 py-6 md:h-full h-[37rem]">
+        <div className="flex md:px-8 px-2 w-full md:py-0 py-4 md:h-full h-[520px] my-auto">
           {/* Previous button */}
           {isScrollable && (
             <img
