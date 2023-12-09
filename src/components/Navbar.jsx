@@ -64,15 +64,15 @@ const Navbar = () => {
     <div>
       <nav className="bg-black border-gray-200 fixed w-full z-20 top-0 start-0 shadow-md">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <span className="title self-center text-2xl font-semibold whitespace-nowrap text-white cursor-default select-none pl-2">
+          <span className="title self-center text-2xl font-semibold whitespace-nowrap text-white cursor-default select-none">
             Portfolio
           </span>
 
-          <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <div className="flex md:order-2 space-x-4 md:space-x-0 rtl:space-x-reverse">
             <a href={cv} target="_blank" rel="noreferrer">
               <button
                 type="button"
-                className="text-black bg-white shadow-md font-semibold rounded-lg text-sm px-4 py-[0.35rem] md:my-0 my-1 text-center"
+                className="text-black bg-white shadow-md font-semibold rounded-lg text-sm md:px-4 px-2 py-[0.35rem] md:my-0 my-1 text-center"
               >
                 Download CV
               </button>
@@ -80,7 +80,7 @@ const Navbar = () => {
             <button
               onClick={toggleDrawer}
               type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm hover:text-black rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              className="inline-flex items-center p-0 w-6 h-10 justify-center text-sm rounded-lg md:hidden"
               aria-expanded={isDrawerOpen ? "true" : "false"}
             >
               <span className="sr-only">Open main menu</span>

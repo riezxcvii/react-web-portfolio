@@ -93,17 +93,17 @@ const Projects = () => {
   return (
     <div>
       <div className="pt-[4rem] min-h-screen flex flex-col items-center">
-        <h1 className="name my-auto py-5 text-4xl px-8 rounded-lg w-full text-white text-center">
+        <h1 className="name my-auto py-4 text-4xl px-8 rounded-lg w-full text-white text-center">
           PROJECTS
         </h1>
 
-        <div className="flex md:px-8 px-6 w-full md:py-0 py-4 md:h-full h-[550px] my-auto">
+        <div className="flex md:px-8 px-6 w-full md:py-0 py-2 md:h-full h-[79vh] my-auto">
           {/* Previous button */}
           {isScrollable && (
             <img
               src={previous}
               id="previous"
-              className="w-12 font-extrabold md:block hidden"
+              className="w-12 font-extrabold md:block hidden mr-4"
               alt="Go to previous"
               onClick={() => scrollSkills("previous")}
             />
@@ -176,7 +176,7 @@ const Projects = () => {
             <img
               src={next}
               id="next"
-              className="w-12 font-extrabold md:block hidden"
+              className="w-12 font-extrabold md:block hidden ml-4"
               alt="Go to next"
               onClick={() => scrollSkills("next")}
             />
