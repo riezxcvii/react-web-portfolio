@@ -41,6 +41,25 @@ const Navbar = () => {
     { page: "Projects", link: "#projects", id: 3 },
   ]);
 
+  // Set array value and call it in the profile section
+  const [profile] = useState([
+    {
+      link: "mailto:rizmarezlo@gmail.com",
+      profile: "G-Mail",
+      id: 1,
+    },
+    {
+      link: "https://www.linkedin.com/in/riezamarie-banquillo/",
+      profile: "Linkedin",
+      id: 2,
+    },
+    {
+      link: "https://github.com/rieza-ix",
+      profile: "GitHub",
+      id: 3,
+    },
+  ]);
+
   return (
     <div>
       <nav className="bg-black border-gray-200 fixed w-full z-20 top-0 start-0 shadow-md">
@@ -85,7 +104,7 @@ const Navbar = () => {
 
           {/* Navigation links in mobile view */}
           <div
-            className={`fixed top-0 right-0 z-50 h-screen p-4 overflow-y-auto transition-transform ${
+            className={`fixed top-0 right-0 z-50 h-screen p-4         overflow-y-auto transition-transform ${
               isDrawerOpen ? "" : "translate-x-full"
             } bg-gray-900 bg-opacity-50 w-full`}
             tabIndex={isDrawerOpen ? 0 : -1}
@@ -93,7 +112,7 @@ const Navbar = () => {
           >
             <div
               id="drawer-right"
-              className={`fixed top-0 right-0 z-50 h-screen p-4 overflow-y-auto transition-transform ${
+              className={`fixed top-0 right-0 z-50 h-screen py-4 px-6 overflow-y-auto transition-transform ${
                 isDrawerOpen ? "" : "translate-x-full"
               } bg-black w-52`}
               tabIndex={isDrawerOpen ? 0 : -1}
@@ -123,11 +142,14 @@ const Navbar = () => {
               </button>
 
               <ul className="space-y-2 font-medium mt-8">
+                <h3 className="text-white py-1">Navigation Links</h3>
+                <hr className="border-white" />
+
                 {navigation.map((navLink) => (
                   <li key={navLink.id}>
                     <a
                       href={navLink.link}
-                      className="flex py-2 px-3 text-white rounded md:p-0 hover:underline hover:underline-offset-4"
+                      className="flex py-2 text-white rounded md:p-0 hover:underline hover:underline-offset-4"
                       aria-current="page"
                     >
                       {navLink.page}
@@ -135,6 +157,33 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
+
+              <ul className="space-y-2 font-medium mt-8">
+                <h3 className="text-white py-1 mt-8">Profile Links</h3>
+                <hr className="border-white" />
+
+                {profile.map((profileLink) => (
+                  <li key={profileLink.id}>
+                    <a
+                      href={profileLink.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex py-2 text-white rounded md:p-0 hover:underline hover:underline-offset-4"
+                    >
+                      {profileLink.profile}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="font-medium fixed bottom-0">
+                <a
+                  href={cv}
+                  className="underline text-center mx-8 pb-6 flex py-2 text-white rounded md:p-0 hover:underline hover:underline-offset-4"
+                >
+                  Download CV
+                </a>
+              </div>
             </div>
           </div>
           {/* Navigation links in desktop view */}
