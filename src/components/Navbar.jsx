@@ -104,7 +104,7 @@ const Navbar = () => {
 
           {/* Navigation links in mobile view */}
           <div
-            className={`fixed top-0 right-0 z-50 h-screen p-4         overflow-y-auto transition-transform ${
+            className={`fixed top-0 right-0 z-50 h-screen p-4 overflow-y-auto transition-transform ${
               isDrawerOpen ? "" : "translate-x-full"
             } bg-gray-900 bg-opacity-50 w-full`}
             tabIndex={isDrawerOpen ? 0 : -1}
@@ -114,7 +114,7 @@ const Navbar = () => {
               id="drawer-right"
               className={`fixed top-0 right-0 z-50 h-screen py-4 px-6 overflow-y-auto transition-transform ${
                 isDrawerOpen ? "" : "translate-x-full"
-              } bg-black w-52`}
+              } bg-black w-60`}
               tabIndex={isDrawerOpen ? 0 : -1}
               aria-labelledby="drawer-right-label"
             >
@@ -179,7 +179,7 @@ const Navbar = () => {
               <div className="font-medium fixed bottom-0">
                 <a
                   href={cv}
-                  className="underline text-center mx-8 pb-6 flex py-2 text-white rounded md:p-0 hover:underline hover:underline-offset-4"
+                  className="underline text-center mx-12 pb-6 flex py-2 text-white rounded md:p-0 hover:underline hover:underline-offset-4"
                 >
                   Download CV
                 </a>
