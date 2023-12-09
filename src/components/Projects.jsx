@@ -124,11 +124,11 @@ const Projects = () => {
                     {/* Desktop mockup */}
                     <div className="m-auto">
                       <div className="relative mx-auto border-black md:border-[10px] border-[8px] rounded-t-xl w-full h-fit bg-black">
-                        <div className="rounded-lg overflow-hidden md:w-[24rem] w-[10rem]">
+                        <div className="rounded-lg overflow-hidden md:w-[24rem] w-[12rem]">
                           {/* Screen image */}
                           <img
                             src={p.desktop}
-                            className="dark:hidden h-[100px] md:h-full w-full rounded-lg my-0"
+                            className="dark:hidden h-[120px] md:h-full w-full rounded-lg my-0"
                             alt={p.alt}
                           />
                         </div>
@@ -139,7 +139,7 @@ const Projects = () => {
 
                     {/* Phone mockup */}
                     <div className={p.mobileVisibility}>
-                      <div className="relative m-auto border-black md:border-[10px] border-[8px] md:rounded-[2rem] rounded-[1.5rem] md:h-[300px] h-[165px] md:w-[170px] w-[100px] shadow-xl">
+                      <div className="relative m-auto border-black md:border-[10px] border-[8px] md:rounded-[2rem] rounded-[1.5rem] md:h-[300px] h-[165px] md:w-[170px] w-[95px] shadow-xl">
                         {/* Notch */}
                         <div className="md:w-[70px] w-[38px] md:h-[12px] h-[9.5px] bg-black top-0 mt-[-0.35rem] rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
                         {/* Volume up */}
