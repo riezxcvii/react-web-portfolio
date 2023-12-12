@@ -139,7 +139,7 @@ const Projects = () => {
 
                     {/* Phone mockup */}
                     <div className={p.mobileVisibility}>
-                      <div className="relative m-auto border-black md:border-[10px] border-[8px] md:rounded-[2rem] rounded-[1.5rem] md:h-[300px] h-[22vh] md:w-[170px] w-[100%] shadow-xl">
+                      <div className="relative m-auto border-black md:border-[10px] border-[8px] md:rounded-[2rem] rounded-[1.5rem] md:h-[300px] h-[21vh] md:w-[170px] w-[100%] shadow-xl">
                         {/* Notch */}
                         <div className="md:w-[70px] w-[38px] md:h-[12px] h-[9.5px] bg-black top-0 mt-[-0.35rem] rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
                         {/* Volume up */}
