@@ -92,8 +92,8 @@ const Projects = () => {
 
   return (
     <div>
-      <div className="pt-[4rem] min-h-screen flex flex-col items-center">
-        <h1 className="name my-auto py-4 text-4xl px-8 rounded-lg w-full text-white text-center">
+      <div className="pt-[4rem] min-h-screen flex flex-col">
+        <h1 className="name tracking-wider my-auto py-4 text-3xl px-8 w-fit rounded-lg text-white">
           PROJECTS
         </h1>
 
@@ -112,34 +112,34 @@ const Projects = () => {
           {/* Project list */}
           <ul
             ref={containerRef}
-            className="items-center mx-auto overflow-x-hidden overflow-y-auto px-0 py-3 md:flex block justify-start gap-8 md:space-y-0 space-y-8"
+            className="items-center mx-auto overflow-x-hidden overflow-y-auto px-4 py-4 md:flex block justify-start gap-8 md:space-y-0 space-y-8"
           >
             {projects.map((p) => (
               <li
                 key={p.id}
-                className="text-black rounded-md md:p-6 p-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 bg-white"
+                className="text-black rounded-l-[1rem] rounded-t-[30rem] md:p-6 p-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 bg-[#9BBEC8]"
               >
                 <a href={p.github} target="_blank" rel="noreferrer">
                   <div className="flex justify-between md:space-x-6 space-x-1">
                     {/* Desktop mockup */}
                     <div className="m-auto">
                       <div className="relative mx-auto border-black md:border-[10px] border-[8px] rounded-t-xl w-full h-fit bg-black">
-                        <div className="rounded-lg overflow-hidden md:w-[24rem] w-[12rem]">
+                        <div className="rounded-lg overflow-hidden md:w-[23.8rem] w-[100%]">
                           {/* Screen image */}
                           <img
                             src={p.desktop}
-                            className="dark:hidden h-[120px] md:h-full w-full rounded-lg my-0"
+                            className="dark:hidden h-[14vh] md:h-full w-full rounded-lg my-0"
                             alt={p.alt}
                           />
                         </div>
                       </div>
-                      <div className="relative mx-auto bg-black rounded-b-xl h-[10px] max-w-[301px] md:h-[28px] md:max-w-[512px]"></div>
-                      <div className="relative mx-auto bg-black shadow-xl rounded-b-md h-[20px] max-w-[45px] md:h-[40px] md:max-w-[85px]"></div>
+                      <div className="relative mx-auto bg-white shadow-xl rounded-b-xl h-[1.6vh] max-w-[301px] md:h-[28px] md:max-w-[512px]"></div>
+                      <div className="relative mx-auto bg-white shadow-xl rounded-b-md h-[3vh] max-w-[26%] md:h-[40px] md:max-w-[85px]"></div>
                     </div>
 
                     {/* Phone mockup */}
                     <div className={p.mobileVisibility}>
-                      <div className="relative m-auto border-black md:border-[10px] border-[8px] md:rounded-[2rem] rounded-[1.5rem] md:h-[300px] h-[165px] md:w-[170px] w-[95px] shadow-xl">
+                      <div className="relative m-auto border-black md:border-[10px] border-[8px] md:rounded-[2rem] rounded-[1.5rem] md:h-[300px] h-[22vh] md:w-[170px] w-[100%] shadow-xl">
                         {/* Notch */}
                         <div className="md:w-[70px] w-[38px] md:h-[12px] h-[9.5px] bg-black top-0 mt-[-0.35rem] rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
                         {/* Volume up */}
@@ -147,7 +147,7 @@ const Projects = () => {
                         {/* Volume down */}
                         <div className="md:h-[30px] h-[20px] w-[3px] bg-black absolute md:-start-[12px] -start-[9px] md:top-[80px] top-[60px] rounded-s-lg"></div>
                         {/* Power button */}
-                        <div className="md:h-[40px] h-[25px] w-[3px] bg-black absolute md:-end-[12px] -end-[9px] md:top-[58px] top-[48px] rounded-e-lg"></div>
+                        <div className="md:h-[40px] h-[25px] w-[3px] bg-black absolute md:-end-[12px] -end-[9px] md:top-[58px] top-[43px] rounded-e-lg"></div>
                         <div className="md:rounded-[1.3rem] rounded-[1rem] overflow-hidden w-full h-full bg-white">
                           {/* Screen image */}
                           <img

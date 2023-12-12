@@ -31,23 +31,23 @@ const Home = () => {
 
   return (
     <div id="home" className="flex items-center justify-center h-screen">
-      <div className="m-auto block p-6 md:w-[41.8rem] w-[23rem] md:space-y-5 space-y-3">
+      <div className="m-auto block p-6 md:w-[41.8rem] max-w-min md:space-y-5 space-y-3 px-4">
         <div className="flex justify-between">
-          <h3 className="title md:text-4xl text-xl text-white cursor-default select-none">
+          <h3 className="title md:text-4xl text-xl text-white cursor-default select-none tracking-wide">
             Hi, I'm
           </h3>
-          <h3 className="title text-black bg-white rounded-md w-fit h-fit py-2 px-3 shadow-md md:text-base text-xs cursor-default select-none developer appear my-auto">
+          <h3 className="title text-black bg-white rounded-md w-fit h-fit py-2 px-3 shadow-md md:text-base text-xs cursor-default select-none developer appear my-auto tracking-wide">
             Software Developer
           </h3>
         </div>
 
-        <h1 className="name md:text-7xl text-4xl sm:text-2xl text-white uppercase cursor-default select-none">
+        <h1 className="name md:text-7xl text-[2.32rem] sm:text-2xl text-white uppercase cursor-default select-none whitespace-nowrap tracking-wide">
           Rieza Banquillo
         </h1>
 
         <hr className="border-2" />
 
-        <p className="text-white md:text-lg text-sm whitespace-normal cursor-default select-none tracking-wider">
+        <p className="text-white md:text-lg text-sm whitespace-normal cursor-default select-none tracking-wide">
           I'm dedicated to leveraging cutting-edge technologies to bring your
           visions to life. Let's collaborate and elevate your digital presence
           with expertise and creativity.
