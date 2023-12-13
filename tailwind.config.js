@@ -6,12 +6,7 @@ module.exports = {
   ],
   theme: {
     extend: {},
-    colors: {
-      dirtyWhite: "#e5e0ff",
-      lightPeach: "#d09b8e",
-      peach: "#c98c7c",
-      darkPeach: "#c27d6b",
-    },
+    colors: {},
   },
   plugins: [require("flowbite/plugin")],
 };
