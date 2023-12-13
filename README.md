@@ -14,5 +14,5 @@
     <img width="4.6%" align="center" src="https://www.svgrepo.com/show/452185/css-3.svg">
     <img width="3.6%" align="center" src="https://www.svgrepo.com/show/349419/javascript.svg">
     <img width="4.2%" align="center" src="https://www.svgrepo.com/show/452129/vs-code.svg">
-    <img width="4.8%" align="center" src="https://www.svgrepo.com/show/354512/vercel.svg">
+    <img width="4.6%" align="center" src="https://logowik.com/content/uploads/images/vercel1868.jpg">
 </p>
