@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import rmjb from "../assets/img/rmjb.png";
 import Linkedin from "../assets/svg/linkedin.svg";
 import GitHub from "../assets/svg/github.svg";
 import GMail from "../assets/svg/gmail.svg";
@@ -31,27 +32,37 @@ const Home = () => {
 
   return (
     <div id="home" className="flex items-center justify-center h-screen">
-      <div className="m-auto block p-6 md:w-[41.8rem] max-w-min md:space-y-5 space-y-3 px-4">
-        <div className="flex justify-between">
-          <h3 className="title md:text-4xl text-xl text-white cursor-default select-none tracking-wide">
-            Hi, I'm
-          </h3>
-          <h3 className="title text-black bg-white rounded-md w-fit h-fit py-2 px-3 shadow-md md:text-base text-xs cursor-default select-none developer appear my-auto tracking-wide">
-            Software Developer
-          </h3>
+      <div>
+        <div className="md:flex md:space-x-12 space-x-0 justify-between md:px-0 px-8 md:py md:pt-12 md:space-y-0 space-y-8">
+          {/* Image */}
+          <div className="md:w-[28rem] bg-[#9BBEC8] px-8 rounded-bl-[12rem] rounded-tr-[12rem] m-auto">
+            <img src={rmjb} alt="Rieza Marie Banquillo" />
+          </div>
+
+          {/* Other details */}
+          <div className="my-auto block md:w-[41.2rem] md:py-20 w-full md:space-y-5 space-y-3 px-2">
+            <div className="flex justify-between">
+              <h3 className="title md:text-4xl text-xl text-white cursor-default select-none tracking-wide">
+                Hi, I'm
+              </h3>
+              <h3 className="title text-black bg-white rounded-md w-fit h-fit py-2 px-3 shadow-md md:text-base text-xs cursor-default select-none developer appear my-auto tracking-wide">
+                Software Developer
+              </h3>
+            </div>
+
+            <h1 className="name md:text-7xl text-[2.32rem] sm:text-2xl text-white uppercase cursor-default select-none whitespace-nowrap tracking-wide">
+              Rieza Banquillo
+            </h1>
+
+            <hr className="border-2" />
+
+            <p className="text-white md:text-lg text-sm whitespace-normal cursor-default select-none tracking-wide">
+              I'm dedicated to leveraging cutting-edge technologies to bring
+              your visions to life. Let's collaborate and elevate your digital
+              presence with expertise and creativity.
+            </p>
+          </div>
         </div>
-
-        <h1 className="name md:text-7xl text-[2.32rem] sm:text-2xl text-white uppercase cursor-default select-none whitespace-nowrap tracking-wide">
-          Rieza Banquillo
-        </h1>
-
-        <hr className="border-2" />
-
-        <p className="text-white md:text-lg text-sm whitespace-normal cursor-default select-none tracking-wide">
-          I'm dedicated to leveraging cutting-edge technologies to bring your
-          visions to life. Let's collaborate and elevate your digital presence
-          with expertise and creativity.
-        </p>
 
         {/* Profile links */}
         <div className="py-6 px-8 grid grid-cols-1 grid-rows-2 absolute right-0 bottom-0 m-0 mt-0 items-center justify-center">
