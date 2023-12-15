@@ -117,7 +117,7 @@ const Projects = () => {
             {projects.map((p) => (
               <li
                 key={p.id}
-                className="text-black rounded-b-[1rem] rounded-t-[30rem] md:p-6 p-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 bg-[#9BBEC8]"
+                className="text-black rounded-b-[1rem] rounded-t-[30rem] md:p-6 p-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 bg-[#CA965C]"
               >
                 <a href={p.github} target="_blank" rel="noreferrer">
                   <div className="flex justify-between md:space-x-6 space-x-1">

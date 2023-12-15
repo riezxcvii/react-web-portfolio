@@ -87,7 +87,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="bg-[#427D9D] border-gray-200 fixed w-full z-20 top-0 start-0 shadow-md">
+      <nav className="bg-[#876445] border-gray-200 fixed w-full z-20 top-0 start-0 shadow-md">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <span className="title self-center text-2xl font-semibold whitespace-nowrap text-white cursor-default select-none">
             Portfolio
@@ -139,7 +139,7 @@ const Navbar = () => {
               id="drawer-right"
               className={`fixed top-0 right-0 z-50 h-screen py-4 px-6 overflow-y-auto transition-transform ${
                 isDrawerOpen ? "" : "translate-x-full"
-              } bg-[#427D9D] w-60`}
+              } bg-[#876445] w-60`}
               tabIndex={isDrawerOpen ? 0 : -1}
               aria-labelledby="drawer-right-label"
             >
@@ -229,7 +229,7 @@ const Navbar = () => {
 
           {/* Navigation links in desktop view */}
           <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#427D9D] md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#876445] md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
               {navigation.map((navLink) => (
                 <li key={navLink.id} className="flex">
                   <img

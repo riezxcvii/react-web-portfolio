@@ -35,7 +35,7 @@ const Home = () => {
       <div>
         <div className="md:flex md:space-x-12 space-x-0 justify-between md:px-0 px-8 md:py md:pt-12 md:space-y-0 space-y-8">
           {/* Image */}
-          <div className="md:w-[28rem] bg-[#9BBEC8] px-8 rounded-bl-[12rem] rounded-tr-[12rem] m-auto">
+          <div className="md:w-[28rem] bg-[#CA965C] px-8 rounded-bl-[12rem] rounded-tr-[12rem] m-auto">
             <img src={rmjb} alt="Rieza Marie Banquillo" />
           </div>
 
