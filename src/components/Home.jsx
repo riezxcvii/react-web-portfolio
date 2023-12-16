@@ -33,9 +33,9 @@ const Home = () => {
   return (
     <div id="home" className="flex items-center justify-center h-screen">
       <div>
-        <div className="md:flex md:space-x-12 space-x-0 justify-between md:px-0 px-8 md:py md:pt-12 md:space-y-0 space-y-8">
+        <div className="md:flex md:space-x-12 space-x-0 justify-between md:px-0 px-8 md:py md:pt-12 md:space-y-0 space-y-12">
           {/* Image */}
-          <div className="md:w-[28rem] bg-[#CA965C] px-8 rounded-bl-[12rem] rounded-tr-[12rem] m-auto">
+          <div className="md:w-[28rem] bg-[#D7CEC2] px-8 rounded-br-[12rem] rounded-tl-[12rem] m-auto">
             <img src={rmjb} alt="Rieza Marie Banquillo" />
           </div>
 
@@ -45,7 +45,7 @@ const Home = () => {
               <h3 className="title md:text-4xl text-xl text-white cursor-default select-none tracking-wide">
                 Hi, I'm
               </h3>
-              <h3 className="title text-black bg-white rounded-md w-fit h-fit py-2 px-3 shadow-md md:text-base text-xs cursor-default select-none developer appear my-auto tracking-wide">
+              <h3 className="title text-black bg-[#e6af2e] rounded-md w-fit h-fit py-2 px-3 shadow-md md:text-base text-xs cursor-default select-none developer appear my-auto tracking-wide">
                 Software Developer
               </h3>
             </div>
