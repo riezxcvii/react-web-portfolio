@@ -36,7 +36,7 @@ const Projects = () => {
       description: "Java • Java Swing • JDBC • MySQL",
       github: "https://github.com/rieza-ix/java-appointment-system.git",
       desktop: appointment,
-      mobileVisibility: "hidden ym-aut mr-[-2rem]o",
+      mobileVisibility: "hidden my-auto mr-[-2rem]",
       alt: "Appointment System - Login Page",
       id: 3,
     },
@@ -128,7 +128,7 @@ const Projects = () => {
                           {/* Screen image */}
                           <img
                             src={p.desktop}
-                            className="dark:hidden h-[14vh] md:h-full w-full rounded-lg my-0"
+                            className="dark:hidden h-[13vh] md:h-full w-full rounded-lg my-0"
                             alt={p.alt}
                           />
                         </div>
@@ -139,15 +139,15 @@ const Projects = () => {
 
                     {/* Phone mockup */}
                     <div className={p.mobileVisibility}>
-                      <div className="relative m-auto border-black md:border-[10px] border-[8px] md:rounded-[2rem] rounded-[1.5rem] md:h-[270px] h-[20.4vh] md:w-[150px] w-[100%] shadow-xl">
+                      <div className="relative m-auto border-black md:border-[10px] border-[6px] md:rounded-[2rem] rounded-[1.4rem] md:h-[270px] h-[17.8vh] md:w-[150px] w-[4.6rem] shadow-xl">
                         {/* Notch */}
                         <div className="md:w-[70px] w-[38px] md:h-[12px] h-[9.5px] bg-black top-0 mt-[-0.35rem] rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
                         {/* Volume up */}
-                        <div className="md:h-[30px] h-[20px] w-[3px] bg-black absolute md:-start-[12px] -start-[9px] md:top-[40px] top-[30px] rounded-s-lg"></div>
+                        <div className="md:h-[30px] h-[20px] w-[3px] bg-black absolute md:-start-[12px] -start-[7px] md:top-[40px] top-[20px] rounded-s-lg"></div>
                         {/* Volume down */}
-                        <div className="md:h-[30px] h-[20px] w-[3px] bg-black absolute md:-start-[12px] -start-[9px] md:top-[80px] top-[60px] rounded-s-lg"></div>
+                        <div className="md:h-[30px] h-[20px] w-[3px] bg-black absolute md:-start-[12px] -start-[7px] md:top-[80px] top-[50px] rounded-s-lg"></div>
                         {/* Power button */}
-                        <div className="md:h-[40px] h-[25px] w-[3px] bg-black absolute md:-end-[12px] -end-[9px] md:top-[58px] top-[43px] rounded-e-lg"></div>
+                        <div className="md:h-[40px] h-[25px] w-[3px] bg-black absolute md:-end-[12px] -end-[7px] md:top-[58px] top-[33px] rounded-e-lg"></div>
                         <div className="md:rounded-[1.3rem] rounded-[1rem] overflow-hidden w-full h-full bg-white">
                           {/* Screen image */}
                           <img

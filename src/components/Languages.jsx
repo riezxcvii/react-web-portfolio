@@ -1,33 +1,21 @@
-import React, { useState, useRef, useEffect } from "react";
-import html5 from "../assets/svg/html.svg";
-import css from "../assets/svg/css.svg";
+import React, { useEffect, useRef, useState } from "react";
 import java from "../assets/svg/java.svg";
 import javascript from "../assets/svg/javascript.svg";
-import php from "../assets/svg/php.svg";
-import mysql from "../assets/svg/mysql.svg";
-import javaswing from "../assets/img/javaswing.png";
-import rjs from "../assets/svg/rjs.svg";
-import nextjs from "../assets/svg/next-js.svg";
-import tailwind from "../assets/svg/tailwind-css.svg";
-import previous from "../assets/svg/previous.svg";
 import next from "../assets/svg/next.svg";
+import php from "../assets/svg/php.svg";
+import previous from "../assets/svg/previous.svg";
+import rjs from "../assets/svg/rjs.svg";
 
-const TechnicalSkills = () => {
-  // Set array value for hard skills and call it in the list
-  const [hardSkills] = useState([
-    { skill: "HTML", logo: html5, alt: "HTML Logo", id: 1 },
-    { skill: "CSS", logo: css, alt: "CSS Logo", id: 2 },
-    { skill: "Java", logo: java, alt: "Java Logo", id: 3 },
-    { skill: "JavaScript", logo: javascript, alt: "JavaScript Logo", id: 4 },
-    { skill: "PHP", logo: php, alt: "PHP Logo", id: 5 },
-    { skill: "MySQL", logo: mysql, alt: "MySQL Logo", id: 6 },
-    { skill: "React", logo: rjs, alt: "React Logo", id: 7 },
-    { skill: "Next.js", logo: nextjs, alt: "Next.js Logo", id: 8 },
-    { skill: "Tailwind CSS", logo: tailwind, alt: "Tailwind CSS Logo", id: 9 },
-    { skill: "Java Swing", logo: javaswing, alt: "Java Swing Logo", id: 10 },
+const Languages = () => {
+  // Set array value for languages and call it in the list
+  const [languages] = useState([
+    { skill: "Java", logo: java, alt: "Java Logo", id: 1 },
+    { skill: "JavaScript", logo: javascript, alt: "JavaScript Logo", id: 2 },
+    { skill: "PHP", logo: php, alt: "PHP Logo", id: 3 },
+    { skill: "React", logo: rjs, alt: "React Logo", id: 4 },
   ]);
 
-  hardSkills.sort((a, b) => b.id - a.id); // Sort the 'hardSkills' array in descending order based on the 'id' property
+  languages.sort((a, b) => b.id - a.id); // Sort the 'languages' array in descending order based on the 'id' property
 
   // JavaScript code for previous and next button
   const containerRef = useRef();
@@ -68,8 +56,8 @@ const TechnicalSkills = () => {
 
   return (
     <div>
-      <h1 className="name md:py-4 py-0 text-3xl px-8 rounded-lg w-full text-white">
-        TECHNICAL SKILLS
+      <h1 className="title tracking-wider my-auto text-2xl px-8 w-fit rounded-lg text-white">
+        Languages
       </h1>
 
       <div className="flex px-8 h-full">
@@ -78,7 +66,7 @@ const TechnicalSkills = () => {
           <img
             src={previous}
             id="previous"
-            className="w-12 font-extrabold"
+            className="w-12 font-extrabold md:block hidden"
             alt="Go to previous"
             onClick={() => scrollSkills("previous")}
           />
@@ -87,17 +75,17 @@ const TechnicalSkills = () => {
         {/* Skill set */}
         <ul
           ref={containerRef}
-          className="h-full w-[78rem] items-center mx-auto overflow-x-hidden px-0 py-6 flex justify-start gap-8"
+          className="h-full md:w-[78rem] w-full items-center mx-auto overflow-x-auto px-0 py-4 flex justify-start md:gap-8 gap-4"
         >
-          {hardSkills.map((hs) => (
+          {languages.map((hs) => (
             <li
               key={hs.id}
-              className="md:h-32 h-36 bg-white text-black rounded-md w-32 px-4 py-4"
+              className="bg-white w-fit text-black rounded-md md:p-3 px-10 py-2"
             >
-              <div className="flex flex-col w-24 items-center justify-end h-full text-center">
+              <div className="flex w-full items-center justify-end h-full">
                 <img
                   src={hs.logo}
-                  className="w-auto h-11 justify-between m-auto"
+                  className="w-8 h-8 justify-between m-auto mr-2"
                   alt={hs.alt}
                 />
                 <span className="title tracking-wide md:text-base text-sm align-middle my-auto flex">
@@ -113,7 +101,7 @@ const TechnicalSkills = () => {
           <img
             src={next}
             id="next"
-            className="w-12 font-extrabold"
+            className="w-12 font-extrabold md:block hidden"
             alt="Go to next"
             onClick={() => scrollSkills("next")}
           />
@@ -123,4 +111,4 @@ const TechnicalSkills = () => {
   );
 };
 
-export default TechnicalSkills;
+export default Languages;

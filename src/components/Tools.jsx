@@ -1,16 +1,16 @@
-import React, { useState, useRef, useEffect } from "react";
-import git from "../assets/svg/git.svg";
-import github from "../assets/svg/github.svg";
-import vscode from "../assets/svg/vs-code.svg";
+import React, { useEffect, useRef, useState } from "react";
 import netbeans from "../assets/img/netbeans.png";
 import canva from "../assets/svg/canva.svg";
 import figma from "../assets/svg/figma.svg";
-import previous from "../assets/svg/previous.svg";
+import git from "../assets/svg/git.svg";
+import github from "../assets/svg/github.svg";
 import next from "../assets/svg/next.svg";
+import previous from "../assets/svg/previous.svg";
+import vscode from "../assets/svg/vs-code.svg";
 
-const ToolsUsed = () => {
-  // Set array value for tools used and call it in the list
-  const [toolsUsed] = useState([
+const Tools = () => {
+  // Set array value for tools and call it in the list
+  const [tools] = useState([
     { skill: "Canva", logo: canva, alt: "Canva Logo", id: 1 },
     { skill: "Figma", logo: figma, alt: "Figma Logo", id: 2 },
     { skill: "VS Code", logo: vscode, alt: "VS Code Logo", id: 3 },
@@ -19,7 +19,7 @@ const ToolsUsed = () => {
     { skill: "NetBeans", logo: netbeans, alt: "NetBeans Logo", id: 6 },
   ]);
 
-  toolsUsed.sort((a, b) => b.id - a.id); // Sort the 'toolsUsed' array in descending order based on the 'id' property
+  tools.sort((a, b) => b.id - a.id); // Sort the 'tools' array in descending order based on the 'id' property
 
   // JavaScript code for previous and next button
   const containerRef = useRef();
@@ -60,8 +60,8 @@ const ToolsUsed = () => {
 
   return (
     <div>
-      <h1 className="name text-3xl px-8 md:py-4 py-0 rounded-lg w-full text-white">
-        TOOLS USED
+      <h1 className="title tracking-wider my-auto text-2xl mt-6 px-8 w-fit rounded-lg text-white">
+        Tools
       </h1>
 
       <div className="flex px-8 h-full">
@@ -70,7 +70,7 @@ const ToolsUsed = () => {
           <img
             src={previous}
             id="previous"
-            className="w-12 font-extrabold"
+            className="w-12 font-extrabold md:block hidden"
             alt="Go to previous"
             onClick={() => scrollSkills("previous")}
           />
@@ -79,21 +79,21 @@ const ToolsUsed = () => {
         {/* Skill set */}
         <ul
           ref={containerRef}
-          className="h-full w-[78rem] items-center mx-auto overflow-x-hidden px-0 py-6 flex justify-start gap-8"
+          className="h-full md:w-[78rem] w-full items-center mx-auto overflow-x-auto px-0 py-4 flex justify-start md:gap-8 gap-4"
         >
-          {toolsUsed.map((ts) => (
+          {tools.map((t) => (
             <li
-              key={ts.id}
-              className="md:h-32 h-36 bg-white text-black rounded-md w-32 px-4 py-4"
+              key={t.id}
+              className="bg-white w-fit text-black rounded-md md:p-3 px-10 py-2"
             >
-              <div className="flex flex-col w-24 items-center justify-end h-full text-center">
+              <div className="flex w-full items-center justify-end h-full">
                 <img
-                  src={ts.logo}
-                  className="w-auto h-11 justify-between m-auto"
-                  alt={ts.alt}
+                  src={t.logo}
+                  className="w-8 h-8 justify-between m-auto mr-2"
+                  alt={t.alt}
                 />
                 <span className="title tracking-wide md:text-base text-sm align-middle my-auto flex">
-                  {ts.skill}
+                  {t.skill}
                 </span>
               </div>
             </li>
@@ -105,7 +105,7 @@ const ToolsUsed = () => {
           <img
             src={next}
             id="next"
-            className="w-12 font-extrabold"
+            className="w-12 font-extrabold md:block hidden"
             alt="Go to next"
             onClick={() => scrollSkills("next")}
           />
@@ -115,4 +115,4 @@ const ToolsUsed = () => {
   );
 };
 
-export default ToolsUsed;
+export default Tools;
