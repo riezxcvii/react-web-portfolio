@@ -40,21 +40,21 @@ const Home = () => {
           </div>
 
           {/* Other details */}
-          <div className="my-auto block md:w-[41.2rem] md:py-20 w-full md:space-y-5 space-y-3 px-2">
-            <div className="flex justify-between">
+          <div className="my-auto block md:w-[36.6rem] md:py-20 w-full px-2">
+            <div className="flex justify-between md:mb-6 mb-0">
               <h3 className="title md:text-4xl text-xl text-white cursor-default select-none tracking-wide">
                 Hi, I'm
               </h3>
-              <h3 className="title text-black bg-[#e6af2e] rounded-md w-fit h-fit py-2 px-3 shadow-md md:text-base text-xs cursor-default select-none developer appear my-auto tracking-wide">
+              <h3 className="title text-black bg-[#e6af2e] rounded-md w-fit h-fit py-1 px-3 shadow-md md:text-base text-xs cursor-default select-none developer appear my-auto tracking-wide">
                 Software Developer
               </h3>
             </div>
 
-            <h1 className="name md:text-7xl text-[2.32rem] sm:text-2xl text-white uppercase cursor-default select-none whitespace-nowrap tracking-wide">
+            <h1 className="name md:text-[4rem] text-[2.5rem] sm:text-2xl text-white uppercase cursor-default select-none whitespace-nowrap tracking-wide md:mb-10 mb-2">
               Rieza Banquillo
             </h1>
 
-            <hr className="border-2" />
+            <hr className="border-2 md:mb-5 mb-4" />
 
             <p className="text-white md:text-lg text-sm whitespace-normal cursor-default select-none tracking-wide">
               I'm dedicated to leveraging cutting-edge technologies to bring

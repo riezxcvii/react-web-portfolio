@@ -93,7 +93,7 @@ const Projects = () => {
   return (
     <div>
       <div className="pt-[4rem] min-h-screen flex flex-col">
-        <h1 className="name tracking-wider my-auto py-4 text-3xl px-8 w-fit rounded-lg text-[#e6af2e]">
+        <h1 className="name tracking-wider my-auto py-2 text-[1.6rem] px-8 w-fit rounded-lg text-[#e6af2e]">
           PROJECTS
         </h1>
 
@@ -124,7 +124,7 @@ const Projects = () => {
                     {/* Desktop mockup */}
                     <div className="m-auto">
                       <div className="relative mx-auto border-black md:border-[10px] border-[8px] rounded-t-xl w-full h-fit bg-black">
-                        <div className="rounded-lg overflow-hidden md:w-[23.8rem] w-[100%]">
+                        <div className="rounded-lg overflow-hidden md:w-[20.4rem] w-[100%]">
                           {/* Screen image */}
                           <img
                             src={p.desktop}
@@ -139,7 +139,7 @@ const Projects = () => {
 
                     {/* Phone mockup */}
                     <div className={p.mobileVisibility}>
-                      <div className="relative m-auto border-black md:border-[10px] border-[8px] md:rounded-[2rem] rounded-[1.5rem] md:h-[300px] h-[20.4vh] md:w-[170px] w-[100%] shadow-xl">
+                      <div className="relative m-auto border-black md:border-[10px] border-[8px] md:rounded-[2rem] rounded-[1.5rem] md:h-[270px] h-[20.4vh] md:w-[150px] w-[100%] shadow-xl">
                         {/* Notch */}
                         <div className="md:w-[70px] w-[38px] md:h-[12px] h-[9.5px] bg-black top-0 mt-[-0.35rem] rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
                         {/* Volume up */}
@@ -159,7 +159,7 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="flex flex-col items-center justify-end h-max space-y-2 w-full text-center tracking-wide md:pt-4 pt-2 p-2 mt-4">
+                  <div className="flex flex-col items-center justify-end h-max space-y-2 w-full text-center tracking-wide md:pt-4 pt-2 p-2">
                     {/* Project title */}
                     <span className="name md:text-xl text-base">{p.title}</span>
                     <span className="md:text-base text-sm">
