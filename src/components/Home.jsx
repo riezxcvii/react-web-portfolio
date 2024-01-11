@@ -36,15 +36,15 @@ const Home = () => {
       className="flex items-center justify-center max-w-screen h-screen"
     >
       <div>
-        <div className="md:flex md:space-x-12 space-x-0 justify-between md:px-0 px-8 mx-auto md:py md:pt-12 md:space-y-0 space-y-12">
+        <div className="md:flex md:space-x-12 space-x-0 justify-between md:px-0 px-8 mx-auto md:pt-12 md:space-y-0 space-y-12">
           {/* Image */}
           <div className="md:w-[28rem] w-full bg-[#D7CEC2] px-8 rounded-br-[12rem] rounded-tl-[12rem] m-auto">
             <img src={rmjb} alt="Rieza Marie Banquillo" />
           </div>
 
           {/* Other details */}
-          <div className="block md:w-[36.6rem] w-full md:py-20 px-2 mx-auto">
-            <div className="flex justify-between md:mb-6 mb-0">
+          <div className="block md:w-[36.6rem] w-full md:py-20 mx-auto">
+            <div className="flex justify-between mb-0">
               <h3 className="title md:text-4xl text-xl text-white cursor-default select-none tracking-wide">
                 Hi, I'm
               </h3>
@@ -53,7 +53,7 @@ const Home = () => {
               </h3>
             </div>
 
-            <h1 className="name md:text-[4rem] text-4xl text-center text-white uppercase cursor-default select-none whitespace-nowrap tracking-wide md:mb-10 mb-2">
+            <h1 className="name md:text-[4rem] text-[2.1rem] text-center text-white uppercase cursor-default select-none whitespace-nowrap tracking-wide md:mb-2 mb-1">
               Rieza Banquillo
             </h1>
 
