@@ -36,14 +36,14 @@ const Home = () => {
       className="flex items-center justify-center max-w-screen h-screen"
     >
       <div>
-        <div className="md:flex md:space-x-12 space-x-0 justify-between md:px-0 px-8 md:py md:pt-12 md:space-y-0 space-y-12">
+        <div className="md:flex md:space-x-12 space-x-0 justify-between md:px-0 px-8 mx-auto md:py md:pt-12 md:space-y-0 space-y-12">
           {/* Image */}
           <div className="md:w-[28rem] w-full bg-[#D7CEC2] px-8 rounded-br-[12rem] rounded-tl-[12rem] m-auto">
             <img src={rmjb} alt="Rieza Marie Banquillo" />
           </div>
 
           {/* Other details */}
-          <div className="my-auto block md:w-[36.6rem] w-full md:py-20 px-2">
+          <div className="block md:w-[36.6rem] w-full md:py-20 px-2 mx-auto">
             <div className="flex justify-between md:mb-6 mb-0">
               <h3 className="title md:text-4xl text-xl text-white cursor-default select-none tracking-wide">
                 Hi, I'm
@@ -53,13 +53,13 @@ const Home = () => {
               </h3>
             </div>
 
-            <h1 className="name md:text-[4rem] text-[1.9rem] text-white uppercase cursor-default select-none whitespace-nowrap tracking-wide md:mb-10 mb-2">
+            <h1 className="name md:text-[4rem] text-4xl text-center text-white uppercase cursor-default select-none whitespace-nowrap tracking-wide md:mb-10 mb-2">
               Rieza Banquillo
             </h1>
 
             <hr className="border-2 md:mb-5 mb-4" />
 
-            <p className="text-white md:text-lg text-sm whitespace-normal cursor-default select-none tracking-wide md:w-full w-[17rem]">
+            <p className="text-white md:text-lg text-sm whitespace-normal cursor-default select-none tracking-wide md:w-full">
               I'm dedicated to leveraging cutting-edge technologies to bring
               your visions to life. Let's collaborate and elevate your digital
               presence with expertise and creativity.
