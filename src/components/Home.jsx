@@ -43,7 +43,7 @@ const Home = () => {
           </div>
 
           {/* Other details */}
-          <div className="my-auto block md:w-[36.6rem] md:py-20 w-72 px-2">
+          <div className="my-auto block md:w-[36.6rem] w-full md:py-20 px-2">
             <div className="flex justify-between md:mb-6 mb-0">
               <h3 className="title md:text-4xl text-xl text-white cursor-default select-none tracking-wide">
                 Hi, I'm
@@ -59,7 +59,7 @@ const Home = () => {
 
             <hr className="border-2 md:mb-5 mb-4" />
 
-            <p className="text-white md:text-lg text-sm whitespace-normal cursor-default select-none tracking-wide">
+            <p className="text-white md:text-lg text-sm whitespace-normal cursor-default select-none tracking-wide md:w-full w-[17rem]">
               I'm dedicated to leveraging cutting-edge technologies to bring
               your visions to life. Let's collaborate and elevate your digital
               presence with expertise and creativity.
