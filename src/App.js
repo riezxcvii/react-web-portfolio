@@ -10,7 +10,7 @@ import Tools from "./components/Tools";
 
 function App() {
   useEffect(() => {
-    document.title = "Web Portfolio";
+    document.title = "Rieza Banquillo";
   }, []);
 
   return (
