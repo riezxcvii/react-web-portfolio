@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
@@ -8,6 +9,10 @@ import WebTechnologies from "./components/WebTechnologies";
 import Tools from "./components/Tools";
 
 function App() {
+  useEffect(() => {
+    document.title = "Web Portfolio";
+  }, []);
+
   return (
     <div className="App max-w-screen">
       {/* Background */}
