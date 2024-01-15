@@ -14,7 +14,7 @@ const Projects = () => {
     {
       title: "ANS Library Management System",
       description: "HTML • Tailwind CSS • PHP • MySQL",
-      github: "https://github.com/rieza-ix/library-management-system.git",
+      github: "http://anslibrary.infinityfreeapp.com/",
       desktop: anslmsD,
       mobile: anslmsM,
       mobileVisibility: "block",
