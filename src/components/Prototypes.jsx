@@ -1,53 +1,29 @@
 import React, { useState, useRef, useEffect } from "react";
-import anslmsD from "../assets/img/desktop-ans-lms.png";
-import anslmsM from "../assets/img/mobile-ans-lms.png";
-import stackschedD from "../assets/img/desktop-stack-sched.png";
-import stackschedM from "../assets/img/mobile-stack-sched.png";
-import appointment from "../assets/img/desktop-appointment-system.png";
-import inventory from "../assets/img/desktop-inventory-system.png";
+import stacksched from "../assets/img/prototype-stack-sched.png";
+import inventory from "../assets/img/prototype-inventory-system.png";
 import previous from "../assets/svg/previous.svg";
 import next from "../assets/svg/next.svg";
 
-const Projects = () => {
+const Prototypes = () => {
   // Set array value for hard skills and call it in the list
   const [projects] = useState([
     {
-      title: "ANS Library Management System",
-      description: "HTML • Tailwind CSS • PHP • MySQL",
-      github: "http://anslibrary.infinityfreeapp.com/",
-      desktop: anslmsD,
-      mobile: anslmsM,
-      mobileVisibility: "block",
-      alt: "ANS LMS - Login Page",
+      title: "StackTrek Scheduling System",
+      figma:
+        "https://www.figma.com/proto/UF6Lf0hGmFoIIde3Q5pPR2/Scheduling-System?type=design&node-id=1-2&t=h0cyhoUJgxpLaXCY-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design",
+      desktop: stacksched,
+      mobileVisibility: "hidden my-auto",
+      alt: "StackSched - Scheduling Page",
       id: 1,
     },
     {
-      title: "StackTrek Scheduling System",
-      description: "Next.js • Tailwind CSS • Prisma • Supabase",
-      github: "https://github.com/Stacktrek-Training/stack-sched.git",
-      desktop: stackschedD,
-      mobile: stackschedM,
-      mobileVisibility: "block",
-      alt: "StackSched - Scheduling Page",
-      id: 2,
-    },
-    {
-      title: "Appointment System",
-      description: "Java • Java Swing • JDBC • MySQL",
-      github: "https://github.com/rieza-ix/java-appointment-system.git",
-      desktop: appointment,
-      mobileVisibility: "hidden my-auto mr-[-2rem]",
-      alt: "Appointment System - Login Page",
-      id: 3,
-    },
-    {
       title: "Inventory System",
-      description: "Java • Java Swing • JDBC • MySQL",
-      github: "https://github.com/rieza-ix/inventory-system.git",
+      figma:
+        "https://www.figma.com/proto/ijlwB8FBESsBKHYa2OK8e4/Java-Inventory-System?type=design&node-id=1-2&t=cO6DQPGvZQY4XasA-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design",
       desktop: inventory,
       mobileVisibility: "hidden my-auto",
       alt: "Inventory System - Dashboard Page",
-      id: 4,
+      id: 2,
     },
   ]);
 
@@ -94,7 +70,7 @@ const Projects = () => {
     <div>
       <div className="pt-[4rem] min-h-screen flex flex-col">
         <h1 className="name tracking-wider my-auto py-2 text-[1.6rem] px-8 w-fit rounded-lg text-[#e6af2e]">
-          APPLICATION SYSTEMS
+          PROTOTYPES
         </h1>
 
         <div className="flex md:px-8 px-6 w-full md:py-0 py-2 md:h-full h-[79vh] my-auto">
@@ -119,7 +95,7 @@ const Projects = () => {
                 key={p.id}
                 className="text-black rounded-b-[1rem] rounded-t-[30rem] md:p-6 p-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 bg-[#D7CEC2]"
               >
-                <a href={p.github} target="_blank" rel="noreferrer">
+                <a href={p.figma} target="_blank" rel="noreferrer">
                   <div className="flex justify-between md:space-x-6 space-x-1">
                     {/* Desktop mockup */}
                     <div className="m-auto">
@@ -162,9 +138,6 @@ const Projects = () => {
                   <div className="flex flex-col items-center justify-end h-max space-y-2 w-full text-center tracking-wide md:pt-4 pt-2 p-2">
                     {/* Project title */}
                     <span className="name md:text-xl text-base">{p.title}</span>
-                    <span className="md:text-base text-sm">
-                      {p.description}
-                    </span>
                   </div>
                 </a>
               </li>
@@ -187,4 +160,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Prototypes;

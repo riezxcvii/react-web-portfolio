@@ -7,6 +7,7 @@ import Frameworks from "./components/Frameworks";
 import Database from "./components/Database";
 import WebTechnologies from "./components/WebTechnologies";
 import Tools from "./components/Tools";
+import Prototypes from "./components/Prototypes";
 
 function App() {
   useEffect(() => {
@@ -63,6 +64,10 @@ function App() {
 
       <div id="projects" className="min-h-screen flex flex-col justify-center">
         <Projects />
+      </div>
+
+      <div id="projects" className="min-h-screen flex flex-col justify-center">
+        <Prototypes />
       </div>
     </div>
   );
