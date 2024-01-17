@@ -93,7 +93,7 @@ const Projects = () => {
   return (
     <div>
       <div className="pt-[4rem] min-h-screen flex flex-col">
-        <h1 className="name tracking-wider my-auto py-2 text-[1.6rem] px-8 w-fit rounded-lg text-[#e6af2e]">
+        <h1 className="name tracking-wider my-auto py-2 md:text-[1.6rem] text-2xl px-8 w-fit rounded-lg text-[#e6af2e]">
           APPLICATION SYSTEMS
         </h1>
 
