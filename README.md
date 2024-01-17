@@ -1,4 +1,4 @@
-g<h2>
+<h2>
     📁Web Portfolio
     <img width="13%" src="https://badgen.net/badge/status/deployed/green" />
 </h2>
