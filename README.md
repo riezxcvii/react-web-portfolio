@@ -1,18 +1,16 @@
-<h2>
-    📁Web Portfolio
-    <img width="13%" src="https://badgen.net/badge/status/deployed/green" />
-</h2>
+# budget_wise
 
-📝 My personal web portfolio
+A new Flutter project.
 
-## 💻 Technologies
+## Getting Started
 
-<p align="left">
-    <img width="4.4%" align="center" src="https://www.svgrepo.com/show/452092/react.svg">
-    <img width="4.4%" align="center" src="https://www.svgrepo.com/show/452228/html-5.svg">
-    <img width="4.4%" align="center" src="https://www.svgrepo.com/show/354431/tailwindcss-icon.svg">
-    <img width="4.4%" align="center" src="https://www.svgrepo.com/show/452185/css-3.svg">
-    <img width="3.8%" align="center" src="https://www.svgrepo.com/show/349419/javascript.svg">
-    <img width="4.2%" align="center" src="https://www.svgrepo.com/show/452129/vs-code.svg">
-    <img width="4.6%" align="center" src="https://logowik.com/content/uploads/images/vercel1868.jpg">
-</p>
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
