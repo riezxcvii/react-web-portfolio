@@ -3,7 +3,7 @@
     <img width="13%" src="https://badgen.net/badge/status/deployed/green" />
 </h2>
 
-📝 My personal web portfolio
+📝My personal web portfolio built with React.
 
 ## 💻 Technologies
 
